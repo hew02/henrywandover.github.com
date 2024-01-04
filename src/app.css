@@ -42,7 +42,7 @@ h3,p {
 #left_container h3 {
     font-size: 13px;
     padding-bottom: 1px;
-    border-bottom: 1px double #000;
+    border-bottom: 1px dotted #000;
     margin: 8px 0 0 0;
 }
 #left_container ul.left_list {

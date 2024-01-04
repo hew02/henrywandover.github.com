@@ -1,6 +1,6 @@
 <script lang="js">
 	import "../app.css";
-	import logo from '$lib/default.jpg'
+	import banner from '$lib/banner.jpg'
 	import { base } from '$app/paths';
 </script>
 
@@ -13,7 +13,10 @@
 <div id="main_container">
 	<div id="header">
 		<a href="{base}/">
-			<img src="https://anton.vill.ee/wp-content/themes/SwissDessign/images/logo.jpg" class="logo" />
+			<!-- svelte-ignore a11y-img-redundant-alt -->
+			<img src={banner} 
+			alt="banner image of apocalyptic proportions"
+			class="logo" />
 		</a>
 	</div>
 
@@ -34,6 +37,12 @@
 		<ul class="left_list">
 			<li>
 				<a href="mailto:henrywandover@gmail.com">email</a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/henrywandover/">linkedin</a>
+			</li>
+			<li>
+				<a href="https://github.com/tsarsalesman">github</a>
 			</li>
 		</ul>
 	</div>
