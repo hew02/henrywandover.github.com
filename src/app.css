@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    border: none;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+    text-decoration: line-through;
+}
+h3,p {
+    margin: 10px 0;
+}
+#main_container {
+    width: 1000px;
+    margin: 0 auto;
+}
+#header {
+    width: 1000px;
+    padding: 0px 0px;
+    margin-bottom: 0px;
+}
+.logo {
+    float: left;
+}
+#left_container {
+    float: left;
+    width: 150px;
+    font-size: 11px;
+    padding-left: 28px;
+    padding-bottom: 5px;
+}
+#left_container h3 {
+    font-size: 13px;
+    padding-bottom: 1px;
+    border-bottom: 1px double #000;
+    margin: 8px 0 0 0;
+}
+#left_container ul.left_list {
+      list-style-type: none;
+      margin: 4px 0;
+}
+
+#left_container ul.left_list li {
+    margin: 0px 0;
+}
+#center_container {
+    float: left;
+    margin-left: 5px;
+    width: 12px;
+    padding: 10px 10px;
+}
+#right_container {
+    width: 521px;
+    float: left;
+}
+
+#right_container h3.title a {
+    font-size: 0px;
+    color: #fff;
+    font-weight: normal;
+}
+
+#right_container img.featured_big {
+    margin: 0;
+    width: 521px;
+    height: 332px;
+}
+#right_container p {
+    width: 800px;
+    height: 800px;
+    font-size: 12px;
+}
+#footer {
+    width: 980px;
+    padding: 10px;
+    text-align: right;
+    background-color: #fff;
+    margin-top: 15px;
+    font-size: 10px;
+}
