@@ -24,7 +24,10 @@
 		<h3>Writings</h3>
 		<ul class="left_list">
 			<li>
-				<a href="{base}/writings">How Liberal Capitalism Creates Industrial Servitude and Socialism Affords Freedom</a>
+				<a href="{base}/paper1">How Liberal Capitalism Creates Industrial Servitude and Socialism Affords Freedom</a>
+			</li>
+			<li>
+				<a href="{base}/paper2">On Creating a Surveillance State</a>
 			</li>
 		</ul>
 		<h3>Code</h3>
