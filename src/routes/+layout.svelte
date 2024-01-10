@@ -52,17 +52,17 @@
 			<h3 in:fly>Contact</h3>
 			<ul class="left_list">
 				<li in:fly>
-					<a href="mailto:henrywandover@gmail.com">email</a>
+					<a href="mailto:henrywandover@gmail.com" rel="noreferrer noopener">email</a>
 				</li>
 				<li in:fly>
-					<a href="https://www.linkedin.com/in/henrywandover/">linkedin</a>
+					<a href="https://www.linkedin.com/in/henrywandover/" target="_blank" rel="noreferrer noopener">linkedin</a>
 				</li>
 				<li in:fly>
-					<a href="https://github.com/tsarsalesman">github</a>
+					<a href="https://github.com/tsarsalesman" target="_blank" rel="noreferrer noopener">github</a>
 				</li>
 			</ul>
 		</div>
-
+ 
 		<div id="center_container"></div>
 		<!-- https://anton.vill.ee/under-construction-2/-->
 		<div id="right_container">

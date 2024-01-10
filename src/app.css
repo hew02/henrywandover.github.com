@@ -38,7 +38,14 @@ h3,p {
     font-size: 11px;
     padding-left: 28px;
     padding-bottom: 5px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
+#left_container::-webkit-scrollbar {
+    display: none;
+}
+
 #left_container h3 {
     font-size: 13px;
     padding-bottom: 1px;
