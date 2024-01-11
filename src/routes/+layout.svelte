@@ -37,16 +37,18 @@
 			<h3 in:fly>Writings</h3>
 			<ul class="left_list">
 				<li in:fly>
-					<a href="{base}/paper1"> '22 How Liberal Capitalism Creates Industrial Servitude and Socialism Affords Freedom</a>
+					<a href="{base}/paper1"> Fall '21 • American Labor's Greatest Uprising</a>
 				</li>
 				<li in:fly>
-					<a href="{base}/paper2">'23 On Creating a Surveillance State</a>
+					<a href="{base}/paper2">Fall '23 • On Creating a Surveillance State</a>
 				</li>
 			</ul>
+			<!--
 			<h3 in:fly>Code</h3>
-			<ul class="left_list">
+				<ul class="left_list">
 
-			</ul>
+				</ul>
+			-->
 			<h3 in:fly>About</h3>
 			<p in:fly>Henry Wandover is a politics student from Philadelphia.</p>
 			<h3 in:fly>Contact</h3>
