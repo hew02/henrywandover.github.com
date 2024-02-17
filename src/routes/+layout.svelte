@@ -37,21 +37,23 @@
 			<h3 in:fly>Writings</h3>
 			<ul class="left_list">
 				<li in:fly>
-					<a href="{base}/paper3"> Spring '23 • Leftover Parts: The Real Issue Underlying the Cobalt Debate in Congo</a>
+					<a href="{base}/leftover-parts"> Spring '23 • Leftover Parts: The Real Issue Underlying the Cobalt Debate in Congo</a>
 				</li>
 				<li in:fly>
-					<a href="{base}/paper2"> Fall '23 • On Creating a Surveillance State</a>
+					<a href="{base}/on-creating-a-surveillance-state"> Fall '23 • On Creating a Surveillance State</a>
 				</li>
 				<li in:fly>
 					<a href="{base}/american-labors-greatest-uprising"> Fall '21 • American Labor's Greatest Uprising</a>
 				</li>
 			</ul>
-			<!--
-			<h3 in:fly>Code</h3>
-				<ul class="left_list">
+			
+			<h3 in:fly>Scribbles</h3>
+			<ul class="left_list">
+				<li in:fly>
+					<a href="{base}/scribbles-one">Scribbles #1</a>
+				</li>
+			</ul>
 
-				</ul>
-			-->
 			<h3 in:fly>About</h3>
 			<p in:fly>Henry Wandover is a politics student from Philadelphia.</p>
 			<h3 in:fly>Contact</h3>
