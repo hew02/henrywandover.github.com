@@ -3,7 +3,7 @@
 	import banner from '$lib/banner.jpg'
 	import { base } from '$app/paths'
 	import { fly } from 'svelte/transition'
-	
+
 	function preload(src) {
 		return new Promise(function(resolve) {
 			let img = new Image()
@@ -62,17 +62,22 @@
 				<li in:fly>
 					<a href="https://www.linkedin.com/in/henrywandover/" target="_blank" rel="noreferrer noopener">linkedin</a>
 				</li>
+			</ul>
+
+			<h3 in:fly>Links</h3>
+			<ul class="left_list">
 				<li in:fly>
 					<a href="https://github.com/tsarsalesman" target="_blank" rel="noreferrer noopener">github</a>
+				</li>
+				<li in:fly>
+					<a href="https://www.youtube.com/@tsarsalesman" target="_blank" rel="noreferrer noopener">youtube</a>
 				</li>
 			</ul>
 		</div>
  
 		<div id="center_container"></div>
 		<!-- https://anton.vill.ee/under-construction-2/-->
-		<div id="right_container">
-			
-		</div>
+		<div id="right_container"></div>
 	{/await}
 </div>
 
