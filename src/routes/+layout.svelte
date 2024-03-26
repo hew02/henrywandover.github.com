@@ -69,7 +69,7 @@
 			<h3 in:fly>Links</h3>
 			<ul class="left_list">
 				<li in:fly>
-					<a href="https://github.com/tsarsalesman" target="_blank" rel="noreferrer noopener">github</a>
+					<a href="https://github.com/yung-turabian" target="_blank" rel="noreferrer noopener">github</a>
 				</li>
 				<li in:fly>
 					<a href="https://www.youtube.com/@tsarsalesman" target="_blank" rel="noreferrer noopener">youtube</a>
