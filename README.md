@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio 🏠
 
 Nothing much, just the repo for my personal website/portfolio.
 
