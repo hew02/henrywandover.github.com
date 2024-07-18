@@ -37,13 +37,13 @@
 			<h3 in:fly>Writings</h3>
 			<ul class="left_list">
 				<li in:fly>
-					<a href="{base}/leftover-parts"> Spring '23 • Leftover Parts: The Real Issue Underlying the Cobalt Debate in Congo</a>
+					<!--<a href="{base}/leftover-parts"> Spring '23 • Leftover Parts: The Real Issue Underlying the Cobalt Debate in Congo</a>-->
 				</li>
 				<li in:fly>
 					<a href="{base}/on-creating-a-surveillance-state"> Fall '23 • On Creating a Surveillance State</a>
 				</li>
 				<li in:fly>
-					<a href="{base}/american-labors-greatest-uprising"> Fall '21 • American Labor's Greatest Uprising</a>
+					<!--<a href="{base}/american-labors-greatest-uprising"> Fall '21 • American Labor's Greatest Uprising</a>-->
 				</li>
 			</ul>
 			
