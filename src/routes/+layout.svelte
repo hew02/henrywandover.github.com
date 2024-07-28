@@ -47,7 +47,7 @@
 				</li>
 			</ul>
 			
-			<h3 in:fly>Scribbles</h3>
+			<h3 in:fly>Blog</h3>
 			<ul class="left_list">
 				<li in:fly>
 					<a href="{base}/scribbles-one">Scribbles #1</a>
