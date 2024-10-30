@@ -25,7 +25,6 @@ h2,h4,h5,h6 {
 		color: #64a70b;
 }
 h3 {
-    font-size: 22px;
     color: #64a70b;
     margin: 10px 0;
 }
@@ -62,12 +61,13 @@ p {
 }
 
 #left_container h3 {
-    font-size: 13px;
+    font-size: 22px;
     padding-bottom: 1px;
     border-bottom: 1px solid #000;
     margin: 8px 0 0 0;
 }
 #left_container ul.left_list {
+      font-size: 16px;
       list-style-type: none;
       margin: 4px 0;
       overflow-y: scroll;
