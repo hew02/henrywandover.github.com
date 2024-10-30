@@ -57,8 +57,9 @@
 			</ul>
 
 			<h3>About</h3>
-			<p >Henry Wandover is a politics student from Philadelphia.</p>
+			<p>Henry Wandover is a computer science student from Philadelphia.</p>
 			<h3>Contact</h3>
+			<h3>Links</h3>
 			<ul class="left_list">
 				<li >
 					<a href="mailto:henrywandover@gmail.com" rel="noreferrer noopener">email</a>
@@ -66,10 +67,7 @@
 				<li>
 					<a href="https://www.linkedin.com/in/henrywandover/" target="_blank" rel="noreferrer noopener">linkedin</a>
 				</li>
-			</ul>
 
-			<h3>Links</h3>
-			<ul class="left_list">
 				<li>
 					<a href="https://github.com/yung-turabian" target="_blank" rel="noreferrer noopener">github</a>
 				</li>

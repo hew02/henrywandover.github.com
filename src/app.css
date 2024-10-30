@@ -10,7 +10,7 @@ img {
     border: none;
 }
 a {
-    color: #64170b;
+    color: #64a70b;
     text-decoration: none;
 }
 a:hover {
@@ -19,10 +19,10 @@ a:hover {
 }
 h1 {
 		font-size: 32px;
-		color: black;
+		color: #64a70b;
 }
 h2,h4,h5,h6 {
-		color: #64170b;
+		color: #64a70b;
 }
 h3 {
     margin: 10px 0;
