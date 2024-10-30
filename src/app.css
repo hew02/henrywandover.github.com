@@ -10,11 +10,11 @@ img {
     border: none;
 }
 a {
-    color: black;
+    color: #64170b;
     text-decoration: none;
 }
 a:hover {
-    color: black;
+    color: #64a70b;
     text-decoration: line-through;
 }
 h1 {
@@ -22,7 +22,7 @@ h1 {
 		color: black;
 }
 h2,h4,h5,h6 {
-		color: black;
+		color: #64170b;
 }
 h3 {
     margin: 10px 0;
@@ -31,7 +31,7 @@ p {
     margin: 10px 0;
 		
 		font-size: 12px;
-		color: black;
+		color: #64a70b;
 }
 #main_container {
     width: 1000px;
