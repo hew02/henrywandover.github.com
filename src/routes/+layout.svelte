@@ -14,9 +14,9 @@
 </script>
 
 <svelte:head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </svelte:head>
 
 <div id="main_container">
@@ -50,9 +50,9 @@
 			<h3>Blog</h3>
 			<ul class="left_list">
 					<a 
-					href="{base}/scribbles-one"
+					href="{base}/blog"
 					title="Blog posts">
-					Page #1</a>
+					From 2024</a>
 			</ul>
 
 			<h3>About</h3>

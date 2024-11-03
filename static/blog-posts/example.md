@@ -1,4 +1,6 @@
-###### Aug. 4th, 2024 
-# Hello There!
+---
+title: "Hello Sailor!"
+date: "2024-08-04"
+---
 
 Welcome to my blog where I will occasionally workshop different things.
