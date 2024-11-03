@@ -1,5 +1,5 @@
 <script lang="js">
-	import banner from '$lib/banner.jpg'
+	import banner from '$lib/banner.png'
 	import { base } from '$app/paths'
 	import { fly } from 'svelte/transition'
 
