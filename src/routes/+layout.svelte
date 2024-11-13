@@ -2,6 +2,7 @@
 	import banner from '$lib/banner.png'
 	import { base } from '$app/paths'
 	import { fly } from 'svelte/transition'
+  import Icon from '@iconify/svelte';
 
 	function preload(src) {
 		return new Promise(function(resolve) {
@@ -14,9 +15,11 @@
 </script>
 
 <svelte:head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="app.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </svelte:head>
 
 <div id="main_container">
@@ -60,17 +63,30 @@
 			<h3>Links</h3>
 			<ul class="left_list">
 				<li >
-					<a href="mailto:henrywandover@gmail.com" rel="noreferrer noopener">email</a>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/in/henrywandover/" target="_blank" rel="noreferrer noopener">linkedin</a>
+						<a href="mailto:henrywandover@gmail.com" rel="noopener noreferrer">
+							 <Icon icon="mdi:email" style="color: white; font-size: 1.25em;" />
+						</a>
+
+						<a href="https://www.linkedin.com/in/henrywandover/" target="_blank" rel="noreferrer noopener">
+							 <Icon icon="mdi:linkedin" style="color: white; font-size: 1.25em;" />
+						</a>
+
+						<a href="https://github.com/yung-turabian" target="_blank" rel="noreferrer noopener">
+							 <Icon icon="mdi:github" style="color: white; font-size: 1.25em;" />
+						</a>
+
+						<a href="https://www.youtube.com/@tsarsalesman" target="_blank" rel="noreferrer noopener">							 
+								<Icon icon="mdi:youtube" style="color: white; font-size: 1.25em;" />
+						</a>
 				</li>
 
 				<li>
-					<a href="https://github.com/yung-turabian" target="_blank" rel="noreferrer noopener">github</a>
-				</li>
-				<li>
-					<a href="https://www.youtube.com/@tsarsalesman" target="_blank" rel="noreferrer noopener">youtube</a>
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
 				</li>
 			</ul>
 		</div>
