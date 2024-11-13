@@ -63,19 +63,19 @@
 			<h3>Links</h3>
 			<ul class="left_list">
 				<li >
-						<a href="mailto:henrywandover@gmail.com" rel="noopener noreferrer">
+						<a href="mailto:henrywandover@gmail.com" rel="noopener noreferrer" title="Email">
 							 <Icon icon="mdi:email" style="color: white; font-size: 1.25em;" />
 						</a>
 
-						<a href="https://www.linkedin.com/in/henrywandover/" target="_blank" rel="noreferrer noopener">
+						<a href="https://www.linkedin.com/in/henrywandover/" target="_blank" rel="noreferrer noopener" title="LinkedIn">
 							 <Icon icon="mdi:linkedin" style="color: white; font-size: 1.25em;" />
 						</a>
 
-						<a href="https://github.com/yung-turabian" target="_blank" rel="noreferrer noopener">
+						<a href="https://github.com/yung-turabian" target="_blank" rel="noreferrer noopener" title="GitHub">
 							 <Icon icon="mdi:github" style="color: white; font-size: 1.25em;" />
 						</a>
 
-						<a href="https://www.youtube.com/@tsarsalesman" target="_blank" rel="noreferrer noopener">							 
+						<a href="https://www.youtube.com/@yungturabian" target="_blank" rel="noreferrer noopener" title="YouTube">							 
 								<Icon icon="mdi:youtube" style="color: white; font-size: 1.25em;" />
 						</a>
 				</li>
