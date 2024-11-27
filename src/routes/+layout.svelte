@@ -1,5 +1,5 @@
 <script lang="js">
-	import banner from '$lib/banner.png'
+	import banner from '/static/banner.png'
 	import { base } from '$app/paths'
 	import { fly } from 'svelte/transition'
   import Icon from '@iconify/svelte';
@@ -48,6 +48,14 @@
 						rel="noreferrer noopener"
 						title="View Doxygen pages for my lib">
 						xtralib (C/C++ header only libraries)</a>
+			</ul>
+			<ul class="left_list">
+						<a 
+						href="https://yung-turabian.github.io/hasktan/"
+						target="_blank"
+						rel="noreferrer noopener"
+						title="Git repository">
+						hasktan (An interpreted functional mini-language)</a>
 			</ul>
 			
 			<h3>Blog</h3>
