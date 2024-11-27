@@ -51,11 +51,11 @@
 			</ul>
 			<ul class="left_list">
 						<a 
-						href="https://yung-turabian.github.io/hasktan/"
+						href="https://github.com/yung-turabian/hasktan/"
 						target="_blank"
 						rel="noreferrer noopener"
 						title="Git repository">
-						hasktan (An interpreted functional mini-language)</a>
+						hasktan (mini functional lang)</a>
 			</ul>
 			
 			<h3>Blog</h3>
