@@ -20,7 +20,7 @@
 
   onMount(async () => {
     try {
-      const files = import.meta.glob("/static/blog-posts/*.md", { query: "?raw" });
+      const files = import.meta.glob("/src/blog-posts/*.md", { query: "?raw" });
 
       posts = await Promise.all(
         Object.entries(files).map(async ([path, resolver]) => {
