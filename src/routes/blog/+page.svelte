@@ -20,7 +20,7 @@
 
 	onMount(async () => {
 		try {
-			const files = import.meta.glob('/src/blog-posts/*.md', { query: '?raw' });
+			const files = import.meta.glob('../../../static/blog-posts/*.md', { query: '?raw' });
 
 			posts = await Promise.all(
 				Object.entries(files).map(async ([path, resolver]) => {
@@ -61,8 +61,7 @@
 	});
 </script>
 
-<body>
-	<div id="right_container">
+	<main>
 		{#if posts.length > 0}
 			{#each posts as post}
 				<div class="blog_post">
@@ -74,5 +73,4 @@
 		{:else}
 			<p>Loading posts...</p>
 		{/if}
-	</div>
-</body>
+	</main>

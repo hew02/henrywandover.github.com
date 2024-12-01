@@ -1,5 +1,5 @@
 <script lang="ts">
-	import banner from '/banner.png';
+	import banner from '$lib/banner.png';
 	import { onMount } from 'svelte';
 	import { base } from '$app/paths';
 	import { goto } from '$app/navigation';
@@ -17,13 +17,6 @@
 		document.head.appendChild(script);
 	});
 
-	/**
-	 * @typedef {Object} Props
-	 * @property {import('svelte').Snippet} [children]
-	 */
-
-	/** @type {Props} */
-	let { children } = $props();
 
 	function preload(src) {
 		return new Promise(function (resolve) {
@@ -56,11 +49,9 @@
 <!--<img src={banner} alt="Banner depicting a statuette 'chilling'." aria-label="Banner image that refreshes the page." class="logo" />-->
 
 <header>
-	<!--<a href="{base}/">-->
 	<div id="canvas-container">
 		<script src="/sketch.js"></script>
 	</div>
-	<!--</a>-->
 </header>
 
 <div id="flex-container">
@@ -103,12 +94,12 @@
 		<h3>Links</h3>
 		<ul class="left_list">
 			<li>
-				<a href="/src/lib/Resume.pdf" hreflang="en" target="_self" type="application/pdf">Resume</a>
+				<a href="/Resume.pdf" hreflang="en" target="_blank" rel="noreferrer noopener" type="application/pdf">Resume</a>
 			</li>
 		</ul>
 	</aside>
 
-	{@render children?.()}
+	<slot />
 </div>
 
 <footer>

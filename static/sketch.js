@@ -1,23 +1,27 @@
-let img;
+var bannerImg;
 
 function preload() {
-	img = loadImage('/banner.png');
-	if (img !== null) {
+	bannerImg = loadImage('src/lib/banner.png');
+	if (bannerImg !== null) {
 		console.log('Loaded image');
 	}
 }
 
 function setup() {
 	imageMode(CENTER);
-	const container = select('#canvas-container');
 	if (!WEBGL) {
 		console.error('WebGL is not available in this browser.');
 	} else {
+	  const container = select('#canvas-container');
 		var cnv = createCanvas(container.width, container.height, WEBGL);
 		cnv.parent(container);
 		cnv.id('p5-canvas');
 		console.log('WebGL Version: ' + webglVersion);
 	}
+
+  cam = createCamera();
+  cam.setPosition(0, 0, 800);
+  cam.lookAt(0, 0, 0);
 
 	describe("Banner depicting a statuette 'chilling'.");
 }
@@ -26,20 +30,24 @@ function draw() {
 	background(17, 24, 39);
 	cursor(HAND);
 
-	orbitControl();
+  orbitControl(1, 1, 0);
 
 	push();
-	texture(img);
+	texture(bannerImg);
 	noStroke();
-	plane(img.width, img.height);
+	plane(bannerImg.width, bannerImg.height);
 	pop();
 }
 
-function mouseClicked() {
+function mouseClicked(e) {
 	if (mouseY <= height) {
 		const event = new CustomEvent('navigate-to');
 		window.dispatchEvent(event);
 	}
+}
+
+function mouseWheel(e) {
+   return true;
 }
 
 function windowResized() {
