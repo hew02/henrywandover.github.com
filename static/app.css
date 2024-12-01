@@ -66,9 +66,7 @@ p {
 		color: white;
 }
 
-header {
-    width: 100%;
-}
+header {}
 
 aside {
     max-width: 150px;
@@ -156,9 +154,23 @@ footer {
 
 }
 
-  a:hover Icon {
+a:hover Icon {
     color: #4CAF50; /* Replace with your preferred hover color */
-  }
+}
+
+
+#canvas-container {
+    height: 375px;
+    overflow: hidden;
+    max-width: 100%;
+    border: none;
+
+
+    canvas {
+        position: absolute;
+        display: block;
+    }
+}
 
 
 .blog_post {

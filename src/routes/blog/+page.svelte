@@ -16,7 +16,7 @@
     p: "font-size:22px;font-family:'SinaNova',sans-serif",
   });
 
-  let posts = [];
+  let posts = $state([]);
 
   onMount(async () => {
     try {
