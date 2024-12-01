@@ -10,9 +10,13 @@ function preload() {
 function setup() {
     imageMode(CENTER);
     const container = select("#canvas-container");
-    var cnv = createCanvas(container.width, container.height, WEBGL);
-    cnv.parent(container);
-    cnv.id('p5-canvas');
+    if (!WEBGL) {
+        console.error("WebGL is not available in this browser.");
+    } else {
+        var cnv = createCanvas(container.width, container.height, WEBGL);
+        cnv.parent(container);
+        cnv.id('p5-canvas');
+    }
 
     console.log("WebGL Version: " + webglVersion)
 
