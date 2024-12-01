@@ -57,8 +57,8 @@
 	<aside class="font-libre">
 		<h3>Writings</h3>
 		<ul class="left_list">
-			<li><a href="{base}/on-creating-a-surveillance-state">Fall '23 • On Creating a Surveillance State</a></li>
-      <li><a href="{base}/the-final-fumes-of-the-rutgers-teachers-strike">Spring '23 • The Final Fumes of the Rutgers Teachers Strike</li>
+			<li><a href="{base}/on-creating-a-surveillance-state">Fall '23 • <em>On Creating a Surveillance State</em></a></li>
+      <li><a href="{base}/the-final-fumes-of-the-rutgers-teachers-strike">Spring '23 • <em>The Final Fumes of the Rutgers Teachers Strike</em></a></li>
 		</ul>
 
 		<h3>Code</h3>
