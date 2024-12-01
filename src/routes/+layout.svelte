@@ -1,5 +1,5 @@
 <script lang="ts">
- import banner from '$lib/banner.png';
+ import banner from '/banner.png';
  import { onMount } from 'svelte';
  import { base } from '$app/paths';
  import { goto } from '$app/navigation';
@@ -32,6 +32,7 @@
 		 img.src = src;
 	 })
  }
+
 
 
   // Listen for the custom event from p5.js
