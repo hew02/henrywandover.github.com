@@ -1,7 +1,7 @@
 var bannerImg;
 
 function preload() {
-	bannerImg = loadImage('src/lib/banner.png');
+	bannerImg = loadImage('/banner.png');
 	if (bannerImg !== null) {
 		console.log('Loaded image');
 	}

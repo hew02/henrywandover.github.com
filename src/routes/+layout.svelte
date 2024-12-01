@@ -1,5 +1,4 @@
 <script lang="ts">
-	import banner from '$lib/banner.png';
 	import { onMount } from 'svelte';
 	import { base } from '$app/paths';
 	import { goto } from '$app/navigation';
