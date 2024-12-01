@@ -1,35 +1,35 @@
 <script lang="js">
-	import banner from '/src/banner.png'
-	import { base } from '$app/paths'
-	import { fly } from 'svelte/transition'
-  import Icon from '@iconify/svelte';
+ import banner from '$lib/banner.png'
+ import { base } from '$app/paths'
+ import { fly } from 'svelte/transition'
 
-	function preload(src) {
-		return new Promise(function(resolve) {
-			let img = new Image()
-			img.onload = resolve
-			img.src = src
-		})
-	}
-	let src = banner
+ function preload(src) {
+	 return new Promise(function(resolve) {
+		 let img = new Image()
+		 img.onload = resolve
+		 img.src = src
+	 })
+ }
+
+ let src = banner
 </script>
 
 <svelte:head>
-		<link rel="stylesheet" href="app.css" />
+	<link rel="stylesheet" href="app.css" />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </svelte:head>
 
- <header>
-   <a href="{base}/">
-     <img src={banner} alt="Banner image" class="logo" />
-   </a>
- </header>
+<header>
+    <a href="{base}/">
+        <img src={banner} alt="Banner image" class="logo" />
+    </a>
+</header>
 
- <div id="flex-container">
- <aside class="font-libre">
+<div id="flex-container">
+   <aside class="font-libre">
    <h3>Writings</h3>
    <ul class="left_list">
        <a href="{base}/on-creating-a-surveillance-state"> Fall '23 • On Creating a Surveillance State</a>
@@ -48,6 +48,11 @@
    <h3>Blog</h3>
    <ul class="left_list">
        <li><a href="{base}/blog" title="Blog posts">From 2024</a></li>
+   </ul>
+
+   <h3>Links</h3>
+   <ul class="left_list">
+       <li><a href="/src/lib/Resume.pdf" hreflang="en" target="_self" type="application/pdf">Resume</a></li>
    </ul>
 
  </aside>
