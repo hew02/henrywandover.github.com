@@ -32,7 +32,6 @@
 	"dependencies": {
 		"js-yaml": "^4.1.0",
 		"markdown-it": "^14.1.0",
-		"p5-svelte": "^3.1.2",
 		"svelte-ripple-action": "^2.0.0"
 	}
 }
