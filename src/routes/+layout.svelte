@@ -1,8 +1,22 @@
 <script lang="ts">
  import banner from '$lib/banner.png';
+ import { onMount } from 'svelte';
  import { base } from '$app/paths';
  import { goto } from '$app/navigation';
  import { fly } from 'svelte/transition';
+
+ let sketchScriptLoaded = false;
+
+ onMount(() => {
+     const script = document.createElement('script');
+     script.src = '/sketch.js';
+     script.onload = () => {
+         sketchScriptLoaded = true;
+         // Initialize the p5.js sketch here
+     };
+     document.head.appendChild(script);
+ });
+
   /**
    * @typedef {Object} Props
    * @property {import('svelte').Snippet} [children]
@@ -18,8 +32,6 @@
 		 img.src = src;
 	 })
  }
-
- let src = banner
 
 
   // Listen for the custom event from p5.js
@@ -43,7 +55,7 @@
 <header>
     <!--<a href="{base}/">-->
         <div id="canvas-container">
-            <script src="/src/sketch.js"></script>
+            <script src="/sketch.js"></script>
         </div>
     <!--</a>-->
 </header>
