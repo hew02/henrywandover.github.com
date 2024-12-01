@@ -49,6 +49,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
 </svelte:head>
 
 <!--<img src={banner} alt="Banner depicting a statuette 'chilling'." aria-label="Banner image that refreshes the page." class="logo" />-->
