@@ -1,23 +1,38 @@
 var bannerImg;
+var myShader;
+
+var options = {
+   disableTouchActions: true,
+   freeRotation: false
+};
 
 function preload() {
 	bannerImg = loadImage('/banner.png');
 	if (bannerImg !== null) {
 		console.log('Loaded image');
 	}
+
+  myShader = loadShader('/shader.vert', '/shader.frag');
 }
 
 function setup() {
-	imageMode(CENTER);
-	if (!WEBGL) {
+	if (!WEBGL) 
+  {
 		console.error('WebGL is not available in this browser.');
-	} else {
+	} 
+  else 
+  {
 	  const container = select('#canvas-container');
 		var cnv = createCanvas(container.width, container.height, WEBGL);
 		cnv.parent(container);
 		cnv.id('p5-canvas');
 		console.log('WebGL Version: ' + webglVersion);
 	}
+
+	imageMode(CENTER);
+  textureMode(NORMAL);
+
+	noStroke();
 
   cam = createCamera();
   cam.setPosition(0, 0, 800);
@@ -30,11 +45,12 @@ function draw() {
 	background(17, 24, 39);
 	cursor(HAND);
 
-  orbitControl(1, 1, 0);
+
+
+  orbitControl(1, 1, 0, options);
 
 	push();
-	texture(bannerImg);
-	noStroke();
+  texture(bannerImg);
 	plane(bannerImg.width, bannerImg.height);
 	pop();
 }

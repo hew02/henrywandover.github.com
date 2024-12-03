@@ -94,6 +94,12 @@
 			<li>
 				<a href="/Resume.pdf" hreflang="en" target="_blank" rel="noreferrer noopener" type="application/pdf">Resume</a>
 			</li>
+
+      <li>
+          <a href="https://notbyai.fyi/">
+            <img style="padding-top:5px;" src="/Written-By-Human-Not-By-AI-Badge-white.svg">
+          </a>
+      </li>
 		</ul>
 	</aside>
 
@@ -193,5 +199,6 @@
 				</a>
 			</p>
 		</li>
+
 	</ul>
 </footer>
