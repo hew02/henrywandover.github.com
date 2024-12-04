@@ -82,7 +82,7 @@
 		</ul>
 
 		<h3>About</h3>
-		<p>Henry Wandover is a computer science student from Philadelphia.</p>
+		<p>I'm a currently a student at Bard College, I program there as well as my home in Philadelphia.</p>
 
 		<h3>Blog</h3>
 		<ul class="left_list">
