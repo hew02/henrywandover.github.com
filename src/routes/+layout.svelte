@@ -50,6 +50,11 @@
 <header>
 	<div id="canvas-container">
 		<script src="/sketch.js"></script>
+		<noscript>
+			<a href="/">
+			<img src="/banner.png" alt="Banner art of a really chill guy.">
+			</a>
+		</noscript>
 	</div>
 </header>
 
@@ -82,7 +87,7 @@
 		</ul>
 
 		<h3>About</h3>
-		<p>I'm a currently a student at Bard College, I program there as well as my home in Philadelphia.</p>
+		<p>I'm a currently a student at Bard College. I write code at school, as well as my home in Philadelphia.</p>
 
 		<h3>Blog</h3>
 		<ul class="left_list">

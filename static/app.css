@@ -174,6 +174,12 @@ a:hover Icon {
 		position: absolute;
 		display: block;
 	}
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 .blog_post {
