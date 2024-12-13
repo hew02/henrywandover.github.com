@@ -73,7 +73,7 @@
 					href="https://yung-turabian.github.io/xtralib/"
 					target="_blank"
 					rel="noreferrer noopener"
-					title="View Doxygen pages for my lib">xtralib (C/C++ extension for the std)</a
+					title="View Doxygen pages for my lib">xtralib (C/C++ extension for the stdlib)</a
 				>
 			</li>
 			<li>
