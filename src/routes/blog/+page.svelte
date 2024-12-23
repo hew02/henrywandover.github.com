@@ -61,16 +61,20 @@
 	});
 </script>
 
-	<main>
-		{#if posts.length > 0}
-			{#each posts as post}
-				<div class="blog_post">
-					<h6>{post.date}</h6>
-					<h1>{@html post.title}</h1>
-					{@html md.render(post.content)}
-				</div>
-			{/each}
+<svelte:head>
+	<title>Blog ~ hw</title>
+</svelte:head>
+
+<main>
+	{#if posts.length > 0}
+		{#each posts as post}
+			<div class="blog_post">
+				<h6>{post.date}</h6>
+				<h1>{@html post.title}</h1>
+				{@html md.render(post.content)}
+			</div>
+		{/each}
 		{:else}
-			<p>Loading posts...</p>
-		{/if}
-	</main>
+		<p>Loading posts...</p>
+	{/if}
+</main>
