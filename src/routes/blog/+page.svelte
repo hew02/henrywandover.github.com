@@ -2,7 +2,7 @@
     <title>Blog Posts ~ hw</title>
 </svelte:head>
 
-<h1 style="padding-bottom: 3%;">Blog</h1>
+<h1>Blog</h1>
 
 <ol>
     <li class="blog-entry">

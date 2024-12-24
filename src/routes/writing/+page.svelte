@@ -7,9 +7,9 @@
     <title>My Writing ~ hw</title>
 </svelte:head>
 
-<h1 style="padding-bottom: 3%;">Henry's writing (papers/poetry/articles)</h1>
+<h1>Henry's writing (papers/poetry/articles)</h1>
 
-<ol>
+<ol class="none">
     <li class="entry">
         <a
             href="https://henrywandover.substack.com/p/the-final-fumes-of-the-rutgers-teachers"

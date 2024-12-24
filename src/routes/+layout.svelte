@@ -66,7 +66,8 @@
 				href="/writing">
 				WRITING
 			</a>
-			<a href="/">
+			<a  id="nav-home"
+				href="/">
 				HOME
 			</a>
 			<a
@@ -79,7 +80,6 @@
 				BLOG
 			</a>
 		</nav>
-
 
 		<slot />
     </div>
