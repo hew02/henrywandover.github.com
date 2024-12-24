@@ -3,13 +3,15 @@
 </svelte:head>
 
 <h1>Henry Wandover</h1>
-<p>
+<div id="about">
+	<p>
     I'm a currently a student at Bard College.
     I write code at school, as well as my home in Philadelphia.
     With only one semester I'm looking for work in software or game development, check out
     my <a href="/Resume.pdf" hreflang="en" target="_blank" rel="noreferrer noopener" type="application/pdf">resume</a>
     if you're interested!
-</p>
+	</p>
+</div>
 
 <footer>
 <ul>

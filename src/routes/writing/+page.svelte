@@ -7,25 +7,30 @@
     <title>My Writing ~ hw</title>
 </svelte:head>
 
+<h1 style="padding-bottom: 3%;">Henry's writing (papers/poetry/articles)</h1>
+
 <ol>
-    <li>
+    <li class="entry">
         <a
             href="https://henrywandover.substack.com/p/the-final-fumes-of-the-rutgers-teachers"
             target="_blank"
 			rel="noreferrer noopener"
 			title="Substack article"
         >
-            Spring '23 • <em>The Final Fumes of the Rutgers Teachers Strike</em></a>
+            The Final Fumes of the Rutgers Teachers Strike
+        </a>
+        <p>Spring '23</p>
     </li>
 
-    <li>
+    <li class="entry">
 	    <a
             href={document}
             target="_blank"
 			rel="noreferrer noopener"
 			title="Substack article">
 
-            Fall '23 • <em>On Creating a Surveillance State</em>
+            On Creating a Surveillance State
 	    </a>
+        <p>Fall '23</p>
     </li>
 </ol>

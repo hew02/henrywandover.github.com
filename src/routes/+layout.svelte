@@ -5,8 +5,6 @@
  import { goto } from '$app/navigation';
  import { fly } from 'svelte/transition';
 
- export let href;
-
  let sketchScriptLoaded = false;
 
  /*onMount(() => {
@@ -37,7 +35,7 @@
 </script>
 
 <svelte:head>
-	<link rel="stylesheet" href="app.css" />
+	<link rel="stylesheet" href="/app.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
