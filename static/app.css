@@ -49,10 +49,18 @@ body {
 
 	position: relative;
 
+	@media (max-width: 768px) {
+		#card #ai-badge {
+			width: 100px;
+			height: 32px;
+			top: 2%;
+			right: 2%;
+		}
+	}
 
 	#card #ai-badge {
 		position: absolute;
-		left: 83.5%;
+		right: 5%;
 		top: 4%;
 		width: 131px;
 		height: 42px;
@@ -61,6 +69,7 @@ body {
 		);
 		background-size: cover;
 		transition: background-image 0.3s ease-in-out;
+		transform: translateX(0);
 	}
 
 	#card #ai-badge:hover {

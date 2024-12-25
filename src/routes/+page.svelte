@@ -2,7 +2,11 @@
     <title>Henry Wandover</title>
 </svelte:head>
 
-<div id="ai-badge" href="https://notbyai.fyi/"></div>
+
+
+<div id="ai-badge"></div>
+
+
 
 
 <h1>Henry Wandover</h1>
