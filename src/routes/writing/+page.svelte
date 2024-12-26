@@ -16,6 +16,7 @@
             target="_blank"
 			rel="noreferrer noopener"
 			title="Substack article"
+			dir="rtl"
         >
             כמה שירים (Some Poems)
         </a>
