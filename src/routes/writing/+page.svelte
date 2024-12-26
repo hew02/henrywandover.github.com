@@ -10,6 +10,17 @@
 <h1>Henry's writing (papers/poetry/articles)</h1>
 
 <ol class="none">
+		<li class="entry">
+        <a
+            href="https://henrywandover.substack.com/p/some-poems"
+            target="_blank"
+			rel="noreferrer noopener"
+			title="Substack article"
+        >
+            כמה שירים (Some Poems)
+        </a>
+        <p>Winter '24</p>
+    </li>
     <li class="entry">
         <a
             href="https://henrywandover.substack.com/p/the-final-fumes-of-the-rutgers-teachers"
@@ -27,7 +38,7 @@
             href={document}
             target="_blank"
 			rel="noreferrer noopener"
-			title="Substack article">
+			title="PDF attachment">
 
             On Creating a Surveillance State
 	    </a>
