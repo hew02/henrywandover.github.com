@@ -1,0 +1,15 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* TEAM */
+	Author: Henry Wandover
+	Contact: henrywandover [at] gmail.com
+	From: Philadelphia, Pennsylvania, United States
+
+		
+
+/* SITE */
+	Last update:2024/12/28
+	Language: English / Hebrew
+	Doctype:HTML5
+	IDE: Emacs
