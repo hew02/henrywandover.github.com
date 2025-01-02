@@ -89,6 +89,10 @@ class Train {
 						"y": this.y
 				};
 				this.trackMarks.push(newMark);
+
+				if (this.trackMarks.length > 500) {
+						this.trackMarks.pop();
+				}
 		}
 
 		draw() {
