@@ -34,7 +34,6 @@
     "js-yaml": "^4.1.0",
     "markdown-it": "^14.1.0",
     "markdown-it-style": "^1.0.0",
-    "path": "^0.12.7",
-    "rot": "^0.1.0"
+    "path": "^0.12.7"
   }
 }

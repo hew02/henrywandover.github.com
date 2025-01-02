@@ -154,7 +154,7 @@ function setup() {
 	}
 
   textAlign(CENTER, CENTER);
-  gFont = loadFont("vga8.woff");
+  gFont = loadFont("/vga8.woff");
   textFont(gFont, 14);
 
   calculateGrid();
