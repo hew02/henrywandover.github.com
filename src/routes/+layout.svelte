@@ -2,20 +2,12 @@
  import { onMount } from 'svelte';
  import { page } from '$app/stores';
  import { base } from '$app/paths';
- import { goto } from '$app/navigation';
- import { fly } from 'svelte/transition';
 
- let sketchScriptLoaded = false;
+
  let showSite = true;
 
  onMount(() => {
-		const script = document.createElement('script');
-		script.src = '/sketch.js';
-		script.onload = () => {
-				sketchScriptLoaded = true;
-				// Initialize the p5.js sketch here
-		};
-		document.head.appendChild(script);
+
 	});
 
 
@@ -50,11 +42,8 @@
 
 
 <div id="canvas-container">
-<script src="/sketch.js"></script>
+<script src="/sketch.js" type="module" async></script>
 <noscript>
-	<a href="/">
-	<img src="/banner.png" alt="Banner art of a really chill guy.">
-	</a>
 </noscript>
  </div>
 
