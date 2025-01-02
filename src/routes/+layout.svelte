@@ -6,32 +6,33 @@
  import { fly } from 'svelte/transition';
 
  let sketchScriptLoaded = false;
+ let showSite = true;
 
- /*onMount(() => {
-	const script = document.createElement('script');
-	script.src = '/sketch.js';
-	script.onload = () => {
-	sketchScriptLoaded = true;
-	// Initialize the p5.js sketch here
-	};
-	document.head.appendChild(script);
+ onMount(() => {
+		const script = document.createElement('script');
+		script.src = '/sketch.js';
+		script.onload = () => {
+				sketchScriptLoaded = true;
+				// Initialize the p5.js sketch here
+		};
+		document.head.appendChild(script);
 	});
 
 
 	function preload(src) {
-	return new Promise(function (resolve) {
-	let img = new Image();
-	img.onload = resolve;
-	img.src = src;
-	});
+		return new Promise(function (resolve) {
+				let img = new Image();
+				img.onload = resolve;
+				img.src = src;
+		});
 	}
 
-	// Listen for the custom event from p5.js
-	if (typeof window !== 'undefined') {
-	window.addEventListener('navigate-to', () => {
-	goto('/');
-	});
-	}*/
+  if (typeof window !== 'undefined') {
+		window.addEventListener('navigate-to', () => {
+				showSite = !showSite;
+		});
+	}
+
 </script>
 
 <svelte:head>
@@ -47,18 +48,17 @@
 
 <!--<img src={banner} alt="Banner depicting a statuette 'chilling'." aria-label="Banner image that refreshes the page." class="logo" />-->
 
-<!--<header>
-	<div id="canvas-container">
-		<script src="/sketch.js"></script>
-		<noscript>
-			<a href="/">
-			<img src="/banner.png" alt="Banner art of a really chill guy.">
-			</a>
-		</noscript>
-		 </div>
-</header>-->
 
+<div id="canvas-container">
+<script src="/sketch.js"></script>
+<noscript>
+	<a href="/">
+	<img src="/banner.png" alt="Banner art of a really chill guy.">
+	</a>
+</noscript>
+ </div>
 
+{#if showSite == true}
 <div id="main-container">
     <div id="card">
 		<nav>
@@ -82,5 +82,11 @@
 		</nav>
 
 		<slot />
+
     </div>
+
 </div>
+{/if}
+
+
+

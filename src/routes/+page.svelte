@@ -15,7 +15,7 @@
     I'm currently a student at Bard College.
     I write code at school, as well as my home in Philadelphia.
 	With only one semester left to go I'm currently looking for work, either in software or game development.
-	If you have an oppurtunity, or know of one, check out my <a href="/Resume.pdf" hreflang="en" target="_blank" rel="noreferrer noopener" type="application/pdf">resume</a>
+	If you have an oppurtunity, or know of one, check out my <a href="/Resume.pdf" hreflang="en" target="_blank" rel="noreferrer noopener" type="application/pdf">résumé</a>
 	and the rest of my site.
 	</p>
 
