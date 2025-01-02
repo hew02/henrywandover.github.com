@@ -4,7 +4,7 @@
 
 
 
-<div id="ai-badge"></div>
+<a id="ai-badge" href="https://notbyai.fyi/" target="_blank" rel="noreferrer noopener"></a>
 
 
 

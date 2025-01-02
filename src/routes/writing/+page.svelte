@@ -7,7 +7,7 @@
     <title>My Writing ~ hw</title>
 </svelte:head>
 
-<h1>Henry's writing (papers/poetry/articles)</h1>
+<h1>My writing (papers/poetry/articles)</h1>
 
 <ol class="none">
 		<li class="entry">

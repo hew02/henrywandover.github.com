@@ -62,20 +62,20 @@
 <div id="main-container">
     <div id="card">
 		<nav>
-			<a
-				href="/writing">
+			<a 
+				href="/writing" class="item" class:active={$page.url.pathname == "/writing"}>
 				WRITING
 			</a>
 			<a  id="nav-home"
-				href="/">
+				href="/" class="item" class:active={$page.url.pathname == "/"}>
 				HOME
 			</a>
 			<a
-				href="/code">
+				href="/code" class="item" class:active={$page.url.pathname == "/code"}>
 				CODE
 			</a>
 			<a
-				href="{base}/blog"
+				href="/blog" class="item" class:active={$page.url.pathname == "/blog"}
 				title="Blog posts">
 				BLOG
 			</a>

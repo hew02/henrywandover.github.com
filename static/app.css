@@ -33,7 +33,7 @@ html {
 }
 
 body {
-	background: #101010;
+	background: #060606;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	width: 100%;
@@ -68,7 +68,7 @@ body {
 			"./Written-By-Human-Not-By-AI-Badge-white.svg"
 		);
 		background-size: cover;
-		transition: background-image 0.3s ease-in-out;
+		transition: background-image 1s ease-in-out;
 		transform: translateX(0);
 	}
 
@@ -79,18 +79,15 @@ body {
 	}
 
 	#card nav {
-		padding-top: 5%;
+		margin: 3% 0 5% 2%;
+		padding: 1% 0 1% 3.5%;
+		width: 55%;
 		word-spacing: 35px;
-		padding-bottom: 5%;
+		background-color: #242424;
 
-		a {
-			color: white;
-			text-decoration: underline;
-		}
-
-		a:hover {
-			color: #64a70b; /* Replace with your preferred hover color */
-			text-decoration: line-through;
+		a.active {
+				text-decoration-line: underline;
+				font-weight: bold;
 		}
 
 	}
@@ -103,12 +100,12 @@ div#homepage a#homenav {
 
 a {
 	font-size: 18px;
-	color: #64a70b;
-	text-decoration: underline;
+	color: #81d70e;
+	text-decoration: none;
 }
 
 a:hover {
-	color: #64a70b;
+	color: #81d70e;
 	text-decoration: line-through;
 }
 
@@ -140,7 +137,7 @@ p {
 
 	width: 90%;
 	height: 90%;
-	background-color: #111827;
+	background-color: #101010;
 
 	overflow: visible;
 
