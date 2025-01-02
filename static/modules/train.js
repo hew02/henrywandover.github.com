@@ -20,7 +20,7 @@ export class Train {
 		}
 
 		update() {
-				if(this.x > cols) {
+				if(this.x > cols + 30) {
 						this.x = -15;
 						this.y = randInt(8, rows - 8);
 				}
@@ -32,10 +32,11 @@ export class Train {
 						"x": this.x,
 						"y": this.y
 				};
+
 				this.trackMarks.push(newMark);
 
-				if (this.trackMarks.length > 500) {
-						this.trackMarks.pop();
+				if (this.trackMarks.length > 2000) {
+						this.trackMarks.shift();
 				}
 		}
 

@@ -38,8 +38,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
 </svelte:head>
 
-<!--<img src={banner} alt="Banner depicting a statuette 'chilling'." aria-label="Banner image that refreshes the page." class="logo" />-->
-
 
 <div id="canvas-container">
 <script src="/sketch.js" type="module" async></script>
@@ -47,7 +45,7 @@
 </noscript>
  </div>
 
-{#if showSite == true}
+{#if showSite == true && $page.url.pathname != "/sand"}
 <div id="main-container">
     <div id="card">
 		<nav>

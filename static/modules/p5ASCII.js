@@ -4,6 +4,8 @@ export let rows = null;
 export let colSpacing = null;
 export let rowSpacing = null;
 
+let grid = [];
+
 export function calculateGrid(p5) {
   asciiScale = Math.min(p5.width / 80, p5.height / 40);
 	
@@ -12,6 +14,54 @@ export function calculateGrid(p5) {
 
   colSpacing = asciiScale * 0.6;
   rowSpacing = asciiScale;
+
+  grid = Array.from(
+			{ length: rows }, 
+			() => Array(cols).fill(" ")
+	); 
+}
+
+export function spaceAvailable(x, y) {
+		if(x > cols || col < 0 
+				|| y > rows || row < 0) {
+				return null;
+		} else if (grid[row][col] === " ") {
+				return true;
+		} else {
+				return false;
+		}
+}
+
+export function addChar(c, col, row) {
+		if(col > cols || col < 0 
+				|| row > rows || row < 0) {
+				//console.log("attempt to add cell outside grid.");
+				return false;
+		} else {
+				grid[row][col] = c;
+		}
+		
+		return true;
+}
+
+export function drawBatch(p5) {
+		p5.fill('palegreen');
+
+		for(let row = 0; row < rows; row++) {
+				for(let col = 0; col < cols; col++) {
+						if(grid[row][col] === " ") {
+								continue;
+						}
+						const x = col * colSpacing + colSpacing / 2;
+						const y = row * rowSpacing + rowSpacing / 2;   
+						p5.text(grid[row][col],x,y);
+				}
+		}
+
+			grid = Array.from(
+					{ length: rows }, 
+					() => Array(cols).fill(" ")
+			); 
 }
 
 
