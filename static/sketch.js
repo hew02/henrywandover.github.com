@@ -2,6 +2,10 @@ var bannerImg;
 var myShader;
 var gFont;
 
+function randInt(lower = 0, upper = Number.MAX_SAFE_INTEGER) {
+		return Math.floor(Math.random() * upper) + lower; 
+}
+
 
 var options = {
    disableTouchActions: true,
@@ -54,9 +58,6 @@ function drawCharacterGrid() {
 	}
 }
 
-
-
-
 class Train {
 		constructor(x, y) {
 				this.x = x;
@@ -65,15 +66,29 @@ class Train {
 
 				this.frameTimer = 0;
 				this.frameDuration = 2;
+
+				this.trackMarks = [
+						{
+								"x": x,
+								"y": y
+						}
+				]
 		}
 
 		update() {
 				if(this.x > cols) {
-						this.x = -5;
+						this.x = -15;
+						this.y = randInt(8, rows - 8);
 				}
 				this.x = this.x + this.speed;
 
 				this.frameTimer = (this.frameTimer + 1) % (this.frameDuration * 3);
+		
+				let newMark = {
+						"x": this.x,
+						"y": this.y
+				};
+				this.trackMarks.push(newMark);
 		}
 
 		draw() {
@@ -90,18 +105,17 @@ class Train {
 		   
 
 
-				drawString("_II_", x, y-3);
-				drawString("|==|____T_", x, y-2);
-				drawString("|_  |_____|<", x, y-1);
+				drawString("_╗__", x, y-3);
+				drawString("| ☻|____T_", x, y-2);
+				drawString("|_―|_©HW_|≤", x, y-1);
 		 
-			if(this.frameTimer < this.frameDuration) {
-				drawString("  O-O-O-00\\", x, y);
-			} else if(this.frameTimer < this.frameDuration * 2) {
-				drawString("  @-@-@-oo\\", x, y);
+			if(this.frameTimer < this.frameDuration * 1.5) {
+				drawString("  O-O-O-øø\\", x, y);
 			} else {
-				drawString("  @-@-@-oo\\", x, y);
+				drawString("  ⌀-⌀-⌀-oo\\", x, y);
 			}
       
+
 
 			/*text("o O___ _________\
 		 _][__|o| |O O O O|\
@@ -109,17 +123,19 @@ class Train {
 		 /O-O-O     o   o", trainX, height - 40, 100);*/
 
 		}
+
+
+		drawTrackMarks() {
+			for (let mark = 0; mark < this.trackMarks.length; mark++) {
+					drawChar("_", this.trackMarks[mark].x, this.trackMarks[mark].y);
+			}
+		}
 }
 
 let t = null;
 
 function preload() {
-	bannerImg = loadImage('/banner.png');
-	if (bannerImg !== null) {
-		console.log('Loaded image');
-	}
-
-  myShader = loadShader('/shader.vert', '/shader.frag');
+ //myShader = loadShader('/shader.vert', '/shader.frag');
 }
 
 
@@ -138,7 +154,7 @@ function setup() {
 	}
 
   textAlign(CENTER, CENTER);
-  gFont = loadFont("sina_nova.ttf");
+  gFont = loadFont("vga8.woff");
   textFont(gFont, 14);
 
   calculateGrid();
@@ -151,7 +167,7 @@ function setup() {
 
   frameRate(5);
 
-  t = new Train(0, 30);
+  t = new Train(-15, randInt(8, rows - 8));
 }
 
 
@@ -165,6 +181,7 @@ function draw() {
 
   t.update();
   t.draw();
+  t.drawTrackMarks();
   
   if(mouseY >= height - 25) {
 		cursor(HAND);
