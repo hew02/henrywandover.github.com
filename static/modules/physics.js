@@ -20,7 +20,7 @@ class SmokePixel extends Pixel {
 		}
 
 		draw() {
-				this.pos = addChar(this.c, this.x, this.y, 'lightgray');
+				this.pos = addChar(this.c, this.x, this.y, 'gray');
 		}
 
 		update() {

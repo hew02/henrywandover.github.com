@@ -94,8 +94,8 @@ var sketch = new p5(function(p5)
 
 				  drawBatch(p5);
 
-
-
+				  p5.fill(6, 6, 6, 50);
+				  p5.rect(0,0,p5.width,p5.height);
 					
 					if(p5.mouseY >= p5.height - 25) {
 						p5.cursor(p5.HAND);
