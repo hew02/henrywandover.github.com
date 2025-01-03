@@ -1,9 +1,9 @@
 import {randInt} from './modules/hew.js';
-import {calculateGrid, asciiScale, rows, cols, drawChar, drawString, addChar, drawBatch} from './modules/p5ASCII.js';
+import {calculateGrid, asciiScale, rows, cols, addChar, drawBatch} from './modules/p5ASCII.js';
 
 import {Train} from './modules/train.js';
 
-import {SmokePlume} from './modules/physics.js';
+import {SmokePlume, drawAllSmokePixels, updateAllSmokePixels} from './modules/physics.js';
 
 let t = null;
 let s = null;
@@ -54,7 +54,6 @@ var sketch = new p5(function(p5)
 
 					t = new Train(-15, randInt(8, rows - 8));
 
-
 				}
 
 				p5.draw = function() {
@@ -70,7 +69,7 @@ var sketch = new p5(function(p5)
 					}
 
 				  if(spawnNewPlume) {
-						s = new SmokePlume(t.x, t.y - 3, t.speed);
+						s = new SmokePlume(t.x, t.y-4, t.speed);
 					}
 
 				  if(t.x > 0) {
@@ -84,8 +83,10 @@ var sketch = new p5(function(p5)
 
 					t.update();
 				  s.update(p5);
+				  updateAllSmokePixels();
 
-
+				  
+				  drawAllSmokePixels();
 				  s.draw();
 					t.draw(p5);
 
@@ -125,6 +126,8 @@ var sketch = new p5(function(p5)
 				p5.windowResized = function() {
 					const container = p5.select('#canvas-container');
 					p5.resizeCanvas(container.width, container.height);
+
+					calculateGrid(p5);
 				}
 
 });

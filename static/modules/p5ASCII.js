@@ -1,10 +1,17 @@
+import {Matrix} from './hew.js';
+
 export let asciiScale = null;
 export let cols = null;
 export let rows = null;
 export let colSpacing = null;
 export let rowSpacing = null;
 
-let grid = [];
+let layerBG = [];
+let layerFG = [];
+let layer1 = [];
+let layer2 = [];
+let layer3 = [];
+
 
 export function calculateGrid(p5) {
   asciiScale = Math.min(p5.width / 80, p5.height / 40);
@@ -15,70 +22,93 @@ export function calculateGrid(p5) {
   colSpacing = asciiScale * 0.6;
   rowSpacing = asciiScale;
 
-  grid = Array.from(
-			{ length: rows }, 
-			() => Array(cols).fill(" ")
-	); 
+  layerBG = new Matrix(rows, cols, " ");
+  layerFG = new Matrix(rows, cols, " ");
 }
 
 export function spaceAvailable(x, y) {
-		if(x > cols || col < 0 
-				|| y > rows || row < 0) {
+		if(x > cols || x < 0 
+				|| y > rows || y < 0) {
 				return null;
-		} else if (grid[row][col] === " ") {
+		} else if (layerFG[y][x] === " ") {
 				return true;
 		} else {
 				return false;
 		}
 }
 
-export function addChar(c, col, row) {
-		if(col > cols || col < 0 
-				|| row > rows || row < 0) {
+export function addChar(c, col, row, color = 'palegreen') {
+		if(col >= cols || col < 0 
+				|| row >= rows || row < 0) {
 				//console.log("attempt to add cell outside grid.");
 				return false;
 		} else {
-				grid[row][col] = c;
+				layerFG[row][col] = {
+						"c": c,
+						"color": color
+				};
 		}
 		
 		return true;
 }
 
-export function drawBatch(p5) {
-		p5.fill('palegreen');
+export function addCharBG(c, col, row, color = 'palegreen') {
+		if(col >= cols || col < 0 
+				|| row >= rows || row < 0) {
+				//console.log("attempt to add cell outside grid.");
+				return false;
+		} else {
+				layerBG[row][col] = {
+						"c": c,
+						"color": color
+				};
+		}
+		
+		return true;
+}
 
+
+/*
+		* Shortcut for addChar
+*/
+export function addString(s, col, row, color = 'palegreen') {
+	for (let c = 0; c < s.length; c++) {
+		if(s[c] === " ") {continue;}
+		addChar(s[c],col + c,row,color);
+	}
+}
+
+
+export function drawBatch(p5) {
 		for(let row = 0; row < rows; row++) {
 				for(let col = 0; col < cols; col++) {
-						if(grid[row][col] === " ") {
+						if(layerFG[row][col] === " " &&
+						   layerBG[row][col] === " ") {
 								continue;
 						}
+
 						const x = col * colSpacing + colSpacing / 2;
-						const y = row * rowSpacing + rowSpacing / 2;   
-						p5.text(grid[row][col],x,y);
+						const y = row * rowSpacing + rowSpacing / 2;   					
+
+
+						if(layerFG[row][col] === " ")
+						{
+								p5.fill(layerBG[row][col].color);
+								p5.text(layerBG[row][col].c,x,y);
+						} 
+						else 
+						{
+								p5.fill(layerFG[row][col].color);
+								p5.text(layerFG[row][col].c,x,y);
+						}
 				}
 		}
 
-			grid = Array.from(
-					{ length: rows }, 
-					() => Array(cols).fill(" ")
-			); 
+			layerFG.clear();
+
+			layerBG.clear();
 }
 
-
-export function drawChar(p5, c, col, row) {
-		const x = col * colSpacing + colSpacing / 2;
-		const y = row * rowSpacing + rowSpacing / 2;    
-
-    p5.fill('palegreen');
-		p5.text(c,x,y);
-}
-
-
-export function drawString(p5, s, col, row) {
-	for (let c = 0; c < s.length; c++) {
-		drawChar(p5,s[c],col + c,row);
-	}
-}
  
 
 export function drawCharacterGrid() {
@@ -88,7 +118,7 @@ export function drawCharacterGrid() {
 			// Alternate characters for variety
 			const char = (col + row) % 2 === 0 ? '#' : '@';
 
-			drawChar(char, col, row);
+			addChar(char, col, row);
 		}
 	}
 }

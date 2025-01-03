@@ -1,6 +1,6 @@
-import {calculateGrid, asciiScale, rows, cols, drawChar, drawString} from './p5ASCII.js';
+import {calculateGrid, asciiScale, rows, cols, addChar, addCharBG, addString} from './p5ASCII.js';
  
-import {randInt} from './hew.js';
+import * as hw from './hew.js';
 
 export class Train {
 		constructor(x, y) {
@@ -22,7 +22,7 @@ export class Train {
 		update() {
 				if(this.x > cols + 30) {
 						this.x = -15;
-						this.y = randInt(8, rows - 8);
+						this.y = hw.randInt(8, rows - 8);
 				}
 				this.x = this.x + this.speed;
 
@@ -46,22 +46,14 @@ export class Train {
 		  const y = this.y;
 
 
-
-				//drawString("oooo", x-3, y-5);
-				//drawString("   o", x-2, y-4);
-
-
-		   
-
-
-				drawString(p5, "_╗__", x, y-3);
-				drawString(p5, "| ☻|____T_", x, y-2);
-				drawString(p5, "|_―|_©HW_|≤", x, y-1);
+				addString("_╗__", x, y-3);
+				addString("| ☻|____T_", x, y-2);
+				addString("|_―|_©HW_|≤", x, y-1);
 		 
 			if(this.frameTimer < this.frameDuration * 1.5) {
-				drawString(p5, "  O-O-O-øø\\", x, y);
+				addString("  O-O-O-øø\\", x, y);
 			} else {
-				drawString(p5, "  ⌀-⌀-⌀-oo\\", x, y);
+				addString("  ⌀-⌀-⌀-oo\\", x, y);
 			}
       
 
@@ -76,7 +68,7 @@ export class Train {
 
 		drawTrackMarks(p5) {
 			for (let mark = 0; mark < this.trackMarks.length; mark++) {
-					drawChar(p5, "_", this.trackMarks[mark].x, this.trackMarks[mark].y);
+					addCharBG("_", this.trackMarks[mark].x, this.trackMarks[mark].y);
 			}
 		}
 }
