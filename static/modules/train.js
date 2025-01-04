@@ -20,9 +20,13 @@ export class Train {
 		}
 
 		update() {
-				if(this.x > cols + 30) {
+				// random spawn
+				/*if(this.x > cols + 30) {
 						this.x = -15;
 						this.y = hw.randInt(8, rows - 8);
+				}*/
+				if(this.x > cols + 15) {
+						this.x = -15;
 				}
 				this.x = this.x + this.speed;
 
@@ -48,7 +52,7 @@ export class Train {
 
 				addString("_╗__", x, y-3);
 				addString("| ☻|____T_", x, y-2);
-				addString("|_―|_©HW_|≤", x, y-1);
+				addString("|_―|_©HW_|►", x, y-1);
 		 
 			if(this.frameTimer < this.frameDuration * 1.5) {
 				addString("  O-O-O-øø\\", x, y);

@@ -1,5 +1,5 @@
 import {randInt} from './modules/hew.js';
-import {calculateGrid, asciiScale, rows, cols, addChar, drawBatch} from './modules/p5ASCII.js';
+import {calculateGrid, asciiScale, rows, cols, addChar, addCharBG, drawBatch} from './modules/p5ASCII.js';
 
 import {Train} from './modules/train.js';
 
@@ -7,6 +7,7 @@ import {SmokePlume, drawAllSmokePixels, updateAllSmokePixels} from './modules/ph
 
 let t = null;
 let s = null;
+let f = null;
 
 let spawnNewPlume = false;
 
@@ -20,6 +21,29 @@ var options = {
    disableTouchActions: true,
    freeRotation: false
 };
+
+class Fader {
+		constructor() {
+				this.frameTimer = 0;
+				this.frameDuration = 3;
+				this.opacity = 255;
+		}
+
+		draw(p5) {
+        this.frameTimer = (this.frameTimer + 1) % (this.frameDuration * 3);
+				if(this.opacity >= 120 && 
+						this.frameTimer < this.frameDuration * 4) {
+						this.opacity = this.opacity - 10;
+				}
+
+				p5.fill(6, 6, 6, this.opacity);
+				p5.rect(0,0,p5.width,p5.height);
+		}
+}
+
+
+
+
 
 
 var sketch = new p5(function(p5)
@@ -52,15 +76,16 @@ var sketch = new p5(function(p5)
 
 					p5.frameRate(10);
 
-					t = new Train(-15, randInt(8, rows - 8));
+					t = new Train(-15, 29);
+				 
+				  f = new Fader();
 
 				}
 
 				p5.draw = function() {
-
-
 					p5.background(6,6,6);
 
+				  
 
 					//drawCharacterGrid();
 
@@ -85,17 +110,56 @@ var sketch = new p5(function(p5)
 				  s.update(p5);
 				  updateAllSmokePixels();
 
-				  
-				  drawAllSmokePixels();
+
 				  s.draw();
 					t.draw(p5);
+				  
+				  for(let i = 0; i < cols; i++) {
 
-					t.drawTrackMarks(p5);
+							if(i % 26) {
+								addCharBG('═', i, 30, 'tan');
+							} else {
+								if(i < cols / 2) {
+										addChar('╔', i, 24, 'tan');
+										addChar('╝', i+1, 24, 'tan');
+										addChar('╔', i+1, 23, 'tan');
+										addChar('╝', i+2, 23, 'tan');
+										addChar('╦', i+2, 22, 'tan');
+								} else {
+										addChar('╗', i, 24, 'tan');
+										addChar('╚', i-1, 24, 'tan');
+										addChar('╗', i-1, 23, 'tan');
+										addChar('╚', i-2, 23, 'tan');
+										addChar('╦', i-2, 22, 'tan');
+								}
+
+								addChar('║', i, 25, 'tan');
+								addChar('║', i, 26, 'tan');
+								addChar('║', i, 27, 'tan');
+								addChar('║', i, 28, 'tan');
+								addChar('║', i, 29, 'tan');
+								addChar('╬', i, 30, 'tan');
+							for(let j = 31; j < 40; j++) {
+
+								addChar('║', i, j, 'tan');
+							}
+							}
+
+						  addCharBG('═', i, 22, 'tan');
+					}
+
+
+
+
+				  drawAllSmokePixels();
+
+
+					//t.drawTrackMarks(p5);
 
 				  drawBatch(p5);
 
-				  p5.fill(6, 6, 6, 50);
-				  p5.rect(0,0,p5.width,p5.height);
+				  f.draw(p5);
+
 					
 					if(p5.mouseY >= p5.height - 25) {
 						p5.cursor(p5.HAND);
@@ -132,3 +196,26 @@ var sketch = new p5(function(p5)
 
 });
 
+// https://www.youtube.com/watch?v=VtpF-m3KyEk
+// grass (and tree): "ᴦ~↨₋ᴛ
+// https://www.google.com/search?sca_esv=a11fe0c8493c2c3e&sxsrf=ADLYWILoapqBeLiSjug1y2A6WIDNlgkayA:1735873428926&q=dwarf+fortress+ascii&udm=2&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3JyWp6w6_rxLPe8F8fpm5a57iruiBaetC-P1z8A1EgSEtGoKiI-tyuuiDuAjQZN76zQqJViCdF78ZMNlQqovfNwuIqqo1RsVD9GtUqCzkz0DVUQ4z-CimdBJ3tn6agrsB0C0fnR33H6lfurv4ZfC2xlrkF2CyxrCbQL4FaLHuYaKtlILmFg&sa=X&ved=2ahUKEwistey4yNiKAxUKFlkFHVhjBacQtKgLegQIDxAB&biw=564&bih=640&dpr=2#vhid=WDhrTbyJOlm0pM&vssid=mosaic
+
+let map = null;
+
+function makeMap() {
+		map = [];
+		for(let i = 0; i < p5.width; i++) {
+				map[i] = [];
+				for(let j = 0; j < p5.height; j++) {
+
+				}
+		}
+}
+
+function pickColor(i, j) {
+
+}
+
+function drawMap() {
+
+}

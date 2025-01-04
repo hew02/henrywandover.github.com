@@ -1,0 +1,42 @@
+---
+slug: gimp-scripts
+title: GIMP Scripts
+date: 2025-01-03 
+abstract: A shortie about a new thing I discovered in GIMP.
+keywords: gimp, scripting, scheme
+---
+
+<p>This is the content of the article.</p>
+
+<pre>
+<code class="language-scheme">(define (script-fu-auto-guides image drawable)
+  (let* (
+         (width (car (gimp-image-width image)))
+         (height (car (gimp-image-height image)))
+        )
+    (gimp-image-add-hguide image (/ height 2))
+    (gimp-image-add-hguide image 0)
+    (gimp-image-add-hguide image height)
+    
+    (gimp-image-add-vguide image (/ width 2))
+  )
+)
+
+(script-fu-register
+ "script-fu-auto-guides"               ; Script name
+ "Auto Guides"                         ; Menu label
+ "Adds horizontal and vertical guides \
+ at specific positions to each new canvas." ; Description
+ "Henry Wandover"                      ; Author
+ "(c) 2024, Henry Wandover;\
+		BSD-3"                             ; License
+ "December 25th, 2024"                 ; Date
+ "*"                                   ; types of images
+ SF-IMAGE "Input image" 0              ; Image input
+ SF-DRAWABLE "Input drawable" 0        ; Drawable input
+)
+
+;; Add the script to the menu
+(script-fu-menu-register "script-fu-auto-guides" "<Image>/Image/Guides")
+</code>
+</pre>

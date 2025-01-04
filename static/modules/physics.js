@@ -219,7 +219,7 @@ export function updateAllSmokePixels() {
 				}
 		}	
 
-		console.log("Number of smoke particles: " + l);
+		//console.log("Number of smoke particles: " + l);
 }
 
 

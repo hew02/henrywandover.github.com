@@ -43,8 +43,7 @@ body {
 #main-container {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
 
 	position: absolute;
@@ -130,11 +129,13 @@ p {
 }
 
 #card {
+  margin: 2.8% 0 2.8% 0;
 	display: flex;
 	flex-direction: column;
 
-	width: 90%;
-	height: 90%;
+	max-width: 90%;
+	min-width: 90%;
+	min-height: 90%;
 	background-color: #101010;
 
 	overflow: visible;
@@ -166,27 +167,27 @@ p {
 	}
 
 	.blog-entry {
-		padding: 0% 3% 3% 3%;
+		padding: 0% 3% 0.5% 3%;
 		margin: 0% 15% 0% 0%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
 
-	ol.none {
+	ul.none, ol.none {
 		list-style-type: none;
 	}
 
-	ol.bullet {
+	ul.bullet, ol.bullet {
 		list-style-type: disc;
 		color: white;
 		padding-left: 5%;
 	}
 
-	ol {
+	ul, ol {
 		scrollbar-width: none;
 		li {
-			padding-bottom: 3%;
+			padding-bottom: 1%;
 		}
 	}
 
@@ -246,3 +247,5 @@ img {
 		margin-right: auto;
 	}
 }
+
+

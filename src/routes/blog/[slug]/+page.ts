@@ -4,21 +4,31 @@ import { page } from '$app/stores';
 
 export const load: PageLoad = async ({ params, fetch }) => {
 
-	const response = await fetch(`/posts/${params.slug}.htm`);
+	const response = await fetch(`/src/posts/${params.slug}.htm`);
 
 	if (response.ok) {
-		const content = await response.text();
+		const rawContent = await response.text();
 
-		if (params.slug === 'getting-links-up-and-running') {
+		const match = rawContent.match(/^---\n([\s\S]+?)\n---\n([\s\S]*)$/);
 
-			return {
-				title: 'Getting Links Up and Running',
-				date: 'December 23, 2024',
-				abstract: 'A test article.',
-				keywords: 'none',
-				content: content
-			};
+		if (!match) {
+			throw error(500, 'Invalid file format');
 		}
+
+		const [, frontmatter, content] = match;
+
+		// Parse frontmatter as YAML
+		const metadata = Object.fromEntries(
+			frontmatter.split('\n').map((line) => {
+				const [key, ...rest] = line.split(':');
+				return [key.trim(), rest.join(':').trim()];
+			})
+		);
+
+		return {
+			...metadata,
+			content,
+		};
 	}
 
 

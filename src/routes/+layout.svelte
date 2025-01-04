@@ -40,7 +40,8 @@
 
 
 <div id="canvas-container">
-<script src="/sketch.js" type="module" async></script>
+<script src="/sketch.js" type="module" async>
+</script>
 <noscript>
 </noscript>
  </div>

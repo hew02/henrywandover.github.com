@@ -4,10 +4,17 @@
 
 
 <svelte:head>
-    <title>My Writing ~ hw</title>
+    <title>My Writing | Henry Wandover</title>
+    <meta name="title" content="Henry Wandover's Writing" />
+    <meta
+        name="description"
+        content="A personal site made by Henry Wandover, for Henry Wandover"
+    />
+    <meta name="keywords" content="Computer Science, Writing, Blog" />
+    <meta name="author" content="Henry Wandover" />
 </svelte:head>
 
-<h1>My writing (papers/poetry/articles)</h1>
+<h1>My writing (essays/poetry/articles)</h1>
 
 <ol class="none">
 		<li class="entry">

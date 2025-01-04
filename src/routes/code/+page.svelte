@@ -1,5 +1,12 @@
 <svelte:head>
-    <title>Coding Related Projects</title>
+    <title>Programming Projects | Henry Wandover</title>
+    <meta name="title" content="Henry Wandover's Programs" />
+    <meta
+        name="description"
+        content="A personal site made by Henry Wandover, for Henry Wandover"
+    />
+    <meta name="keywords" content="Computer Science, Writing, Blog" />
+    <meta name="author" content="Henry Wandover" />
 </svelte:head>
 
 <h1>
