@@ -192,6 +192,8 @@ var sketch = new p5(function(p5)
 					p5.resizeCanvas(container.width, container.height);
 
 					calculateGrid(p5);
+
+					p5.textSize(asciiScale);
 				}
 
 });
