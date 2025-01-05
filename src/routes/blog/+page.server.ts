@@ -1,44 +1,29 @@
-import type { PageServerLoad } from './$types';
-import { error } from '@sveltejs/kit';
-import { page } from '$app/stores';
-
-import type { BlogPost } from '$lib/db/types.ts';
+import type { PageLoad } from './$types';
 
 export const prerender = true;
 
+export const load: PageLoad = async () => {
+	const posts = import.meta.glob('/static/posts/*.htm', { as: 'raw' });
 
-export const load: PageServerLoad = async ({ params, fetch, locals }) => {
-		try {
+	const allPosts = await Promise.all(
+		Object.entries(posts).map(async ([path, loader]) => {
+			const content = await loader();
+			const metadataMatch = content.match(/^---\n([\s\S]+?)\n---/);
+			const metadata = metadataMatch
+				? Object.fromEntries(
+						metadataMatch[1].split('\n').map((line) => {
+							const [key, ...rest] = line.split(':');
+							return [key.trim(), rest.join(':').trim()];
+						})
+				  )
+				: {};
 
-				const db = locals.db;
+			return {
+				slug: path.split('/').pop()?.replace('.htm', ''),
+				...metadata,
+			};
+		})
+	);
 
-				const posts: BlogPost[] | undefined = await new Promise((resolve, reject) => {
-				db.all<BlogPost>(
-						"SELECT * FROM blog_posts ORDER BY date DESC",
-								(err: Error|null, posts: BlogPost[]) => {
-									if(err) {
-										console.error('SQL Error:', err.message);
-										reject(err);
-										return;
-									} else {
-										resolve(posts)
-									}
-								}
-						);
-				});
-
-
-				if (!posts) {
-					throw error(404, 'Blog posts not found');
-				}
-
-				return {
-					posts
-				};
-
-		} 
-		catch (err) {
-				console.error('Failed to load blog post:', err);
-				throw error(500, 'Failed to load blog posts');
-		}
-}
+	return { posts: allPosts };
+};
