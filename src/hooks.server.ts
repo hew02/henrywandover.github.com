@@ -6,7 +6,7 @@ let db: sqlite3.Database | null = null;
 
 const getDatabase = (): sqlite3.Database => {
   if (!db) {
-    db = new sqlite3.Database('data/db.sqlite', (err) => {
+    db = new sqlite3.Database('static/db.sqlite', (err) => {
       if (err) {
         console.error('Failed to connect to the database:', err);
         throw err;
