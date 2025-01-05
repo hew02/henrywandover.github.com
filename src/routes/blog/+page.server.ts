@@ -2,7 +2,7 @@ import type { PageServerLoad } from './$types';
 import { error } from '@sveltejs/kit';
 import { page } from '$app/stores';
 
-import type { BlogPost } from '$lib/types.ts';
+import type { BlogPost } from '$lib/db/types.ts';
 
 export const prerender = true;
 

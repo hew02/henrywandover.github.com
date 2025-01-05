@@ -4,7 +4,7 @@ import { page } from '$app/stores';
 
 export const load: PageLoad = async ({ params, fetch }) => {
 
-	const response = await fetch(`/src/posts/${params.slug}.htm`);
+	const response = await fetch(`/posts/${params.slug}.htm`);
 
 	if (response.ok) {
 		const rawContent = await response.text();

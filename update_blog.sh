@@ -58,7 +58,7 @@ function parse_yaml_header
 }
 
 
-POSTS=($(find src/posts -name '*.htm'))
+POSTS=($(find static/posts -name '*.htm'))
 
 for item in "${POSTS[@]}"; do
 		parse_yaml_header "$item" 
