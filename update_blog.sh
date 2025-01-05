@@ -33,11 +33,11 @@ function parse_yaml_header
     done
 
 
-    existing_title=$(sqlite3 db.sqlite "SELECT title FROM blog_posts WHERE title = '${meta[title]}';")
+    existing_title=$(sqlite3 data/db.sqlite "SELECT title FROM blog_posts WHERE title = '${meta[title]}';")
     
     if [[ -n "$existing_title" ]]; then
 				echo "Updating '${meta[title]}' in database..."
-				sqlite3 db.sqlite "UPDATE blog_posts SET 
+				sqlite3 data/db.sqlite "UPDATE blog_posts SET 
 					slug = '${meta[slug]}', date = '${meta[date]}', 
 					abstract = '${meta[abstract]}', keywords = '${meta[keywords]}'
 				WHERE title = ('${meta[title]}');" 
@@ -45,7 +45,7 @@ function parse_yaml_header
         return 0
 		else
 				echo "Inserting '${meta[title]}' into the database..."
-				sqlite3 db.sqlite "INSERT INTO blog_posts (slug, title, date, abstract, keywords) VALUES 
+				sqlite3 data/db.sqlite "INSERT INTO blog_posts (slug, title, date, abstract, keywords) VALUES 
 				(
 						'${meta[slug]}', '${meta[title]}', '${meta[date]}', '${meta[abstract]}', '${meta[keywords]}'
 				);"
@@ -64,5 +64,3 @@ for item in "${POSTS[@]}"; do
 		parse_yaml_header "$item" 
 		echo ""
 done
-
-#sqlite3 db.sqlite 'SELECT * FROM blog_posts;'

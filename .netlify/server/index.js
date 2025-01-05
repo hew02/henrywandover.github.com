@@ -1013,9 +1013,6 @@ class BaseProvider {
     if (this.#style_src_needs_csp) {
       this.#style_src.push(source);
     }
-    if (this.#style_src_needs_csp) {
-      this.#style_src.push(source);
-    }
     if (this.#style_src_attr_needs_csp) {
       this.#style_src_attr.push(source);
     }
@@ -1303,17 +1300,13 @@ async function render_response({
     }
     return `${assets$1}/${path}`;
   };
-  if (client.inline?.style) {
-    head += `
-	<style>${client.inline.style}</style>`;
-  }
-  if (inline_styles.size > 0) {
-    const content = Array.from(inline_styles.values()).join("\n");
+  const style = client.inline ? client.inline?.style : Array.from(inline_styles.values()).join("\n");
+  if (style) {
     const attributes = [];
     if (csp.style_needs_nonce) attributes.push(` nonce="${csp.nonce}"`);
-    csp.add_style(content);
+    csp.add_style(style);
     head += `
-	<style${attributes.join("")}>${content}</style>`;
+	<style${attributes.join("")}>${style}</style>`;
   }
   for (const dep of stylesheets) {
     const path = prefixed(dep);
