@@ -139,8 +139,8 @@ var sketch = new p5(function(p5)
 								addChar('║', i, 28, 'tan');
 								addChar('║', i, 29, 'tan');
 								addChar('╬', i, 30, 'tan');
-							for(let j = 31; j < 40; j++) {
-
+							for(let j = 31; j < 45; j++) {
+								addChar('║', i-3, j, ('tan', 70));
 								addChar('║', i, j, 'tan');
 							}
 							}

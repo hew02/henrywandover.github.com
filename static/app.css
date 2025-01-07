@@ -1,5 +1,5 @@
 @font-face {
-	font-family: 'Dobra';
+	font-family: 'DobraBlack';
 	src:
 		local('Dobra Black'),
 		local('Dobra-Black'),
@@ -19,11 +19,30 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'LibreBaskerville';
+	src:
+		local('Libre Baskerville'),
+		local('Libre-Baskerville'),
+		url('/Libre_Baskerville/LibreBaskerville-Regular.ttf') format('truetype');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NotoSerifHebrew';
+	src:
+		local('Noto Serif Hebrew'),
+		local('Noto-Serif-Hebrew'),
+		url('/NotoSerifHebrew-VariableFont_wdth,wght.ttf') format('truetype');
+	font-style: normal;
+}
+
+
 * {
 	margin: 0;
 	padding: 0;
 
-	font-family: 'SinaNova', sans-serif;
+	font-family: 'SinaNova', 'NotoSerifHebrew', sans-serif;
 }
 
 
@@ -80,12 +99,14 @@ body {
 	}
 
 	#card nav {
-		margin: 3% 0 5% 2%;
+		margin: 3% 2% 5% 2%;
 		padding: 1% 0 1% 3.5%;
-		width: 55%;
-		word-spacing: 35px;
+		word-spacing: 15px;
 		background-color: #242424;
 
+		a {
+			font-family: 'LibreBaskerville', sans-serif;
+		}
 		a.active {
 				text-decoration-line: underline;
 				font-weight: bold;
@@ -102,13 +123,13 @@ a {
 }
 
 a:hover {
-	color: #81d70e;
+	color: #64a70b;
 	text-decoration: line-through;
 }
 
 h1,h2,h3 {
-	font-family: 'Libre Baskerville', sans-serif;
-	color: #64a70b;
+	font-family: 'LibreBaskerville', sans-serif;
+	color: white;
 }
 h1 {
 	font-size: 28px;
@@ -142,13 +163,17 @@ p {
 
 	-ms-overflow-style: none;
 
-	nav, h1, h2, h3, h4, h5 {
+	h1, h2, h3, h4, h5 {
 		padding-left: 3%;
 		padding-right: 3%;
 	}
 
-	h1 {
+	h1,h2,h3 {
 		margin-bottom: 2%;
+	}
+
+	h3 {
+		margin-top: 2%;
 	}
 
 	#about {
@@ -156,43 +181,61 @@ p {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		padding: 0 3% 0 3%;
 	}
 
-	#about, .entry {
-		padding: 0% 3% 3% 3%;
-		p {
-			margin: 0;
-			padding: 0;
-		}
+	.writing-entry {
+		margin: 0 0 4% 0;
 	}
 
 	.blog-entry {
+		padding: 0 3% 0 3%;
+
+		p {
+			margin: 4% 0 4% 0;
+		}
+
+		* p {
+			margin: 0;
+		}
+	}
+
+	#blog-list-entry {
 		padding: 0% 3% 0.5% 3%;
 		margin: 0% 15% 0% 0%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
 	}
 
 	ul.none, ol.none {
 		list-style-type: none;
+		li {
+			padding: 0 3% 0 3%;
+			p {
+				padding: 0 3% 0 0;
+			}
+		}
 	}
 
 	ul.bullet, ol.bullet {
 		list-style-type: disc;
 		color: white;
 		padding-left: 5%;
-	}
-
-	ul, ol {
-		scrollbar-width: none;
 		li {
 			padding-bottom: 1%;
+			p {
+				padding: 0 3% 0 0;
+			}
+
 		}
+
 	}
 
 	footer {
 		max-width: 100%;
+		margin-bottom: 2%;
 
 
 		li p a {
@@ -200,7 +243,7 @@ p {
 		}
 
 		li p a:hover {
-			color: #4caf50; /* Replace with your preferred hover color */
+			color: #4caf50;
 		}
 
 		p {

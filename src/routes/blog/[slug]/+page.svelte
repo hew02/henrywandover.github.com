@@ -20,4 +20,4 @@
 
 <h1>{@html data.title}</h1>
 <h4 style="margin-bottom:2%;font-style:italic;">{@html sqlDate2Pretty(data.date)}</h4>
-<div class="entry">{@html data.content}</div>
+<div class="blog-entry">{@html data.content}</div>

@@ -10,12 +10,6 @@
 </svelte:head>
 
 
-
-<a id="ai-badge" href="https://notbyai.fyi/" target="_blank" rel="noreferrer noopener"></a>
-
-
-
-
 <h1>Henry Wandover</h1>
 <div id="about">
 	<p>

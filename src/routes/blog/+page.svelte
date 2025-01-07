@@ -20,7 +20,7 @@
 
 <ol>
 		{#each data.posts as post}
-			<li class="blog-entry">
+			<li id="blog-list-entry">
 				<a
 					href={`/blog/${post.slug}`}
 					target="_self"

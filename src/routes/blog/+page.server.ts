@@ -25,5 +25,12 @@ export const load: PageLoad = async () => {
 		})
 	);
 
-	return { posts: allPosts };
+
+    const sortedPosts = allPosts.sort((a, b) => {
+        const dateA = new Date(a.date || 'unknown date');
+        const dateB = new Date(b.date || 'unknown date');
+        return dateB.getTime() - dateA.getTime();
+    });
+
+	return { posts: sortedPosts };
 };

@@ -17,7 +17,7 @@
 <h1>My writing (essays/poetry/articles)</h1>
 
 <ol class="none">
-		<li class="entry">
+		<li class="writing-entry">
         <a
             href="https://henrywandover.substack.com/p/some-poems"
             target="_blank"
@@ -29,7 +29,7 @@
         </a>
         <p>Winter '24</p>
     </li>
-    <li class="entry">
+    <li class="writing-entry">
         <a
             href="https://henrywandover.substack.com/p/the-final-fumes-of-the-rutgers-teachers"
             target="_blank"
@@ -41,7 +41,7 @@
         <p>Spring '23</p>
     </li>
 
-    <li class="entry">
+    <li class="writing-entry">
 	    <a
             href={document}
             target="_blank"

@@ -52,21 +52,27 @@
 		<nav>
 			<a 
 				href="/writing" class="item" class:active={$page.url.pathname == "/writing"}>
-				WRITING
+				writing
 			</a>
 			<a  id="nav-home"
 				href="/" class="item" class:active={$page.url.pathname == "/"}>
-				HOME
+				home
 			</a>
 			<a
 				href="/code" class="item" class:active={$page.url.pathname == "/code"}>
-				CODE
+				code
 			</a>
 			<a
 				href="/blog" class="item" class:active={$page.url.pathname == "/blog"}
 				title="Blog posts">
-				BLOG
+				blog
 			</a>
+			<a
+				href="/misc" class="item" class:active={$page.url.pathname == "/misc"}
+				title="Other Stuff">
+				misc.
+			</a>
+
 		</nav>
 
 		<slot />
