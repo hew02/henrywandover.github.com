@@ -1,6 +1,7 @@
 import type { PageLoad } from './$types';
 
 export const prerender = true;
+export const csr = false;
 
 export const load: PageLoad = async () => {
 	const posts = import.meta.glob('/static/posts/*.htm', { as: 'raw' });
