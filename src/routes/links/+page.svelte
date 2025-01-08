@@ -1,6 +1,6 @@
 <svelte:head>
     <title>Cool Sites | Henry Wandover</title>
-    <meta name="title" content="Cool Sites" />
+    <meta name="title" content="Links" />
     <meta
         name="description"
         content="A personal site made by Henry Wandover, for Henry Wandover"
@@ -9,8 +9,9 @@
     <meta name="author" content="Henry Wandover" />
 </svelte:head>
 
-<h1>Cool Sites</h1>
+<h1>Links</h1>
 
+<h3>General</h3>
 <ol class="bullet">
 
 		<li>

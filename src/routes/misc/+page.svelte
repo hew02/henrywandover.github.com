@@ -9,14 +9,11 @@
     <meta name="author" content="Henry Wandover" />
 </svelte:head>
 
-<a id="ai-badge" href="https://notbyai.fyi/" target="_blank" rel="noreferrer noopener"></a>
+<!--<a id="ai-badge" href="https://notbyai.fyi/" target="_blank" rel="noreferrer noopener"></a>-->
 
-<ol class="bullet">
-		<li>
-        <p><a
-               href="/cool-sites"
-               title="Sites I Enjoy">
-            cool sites
-        </a></p>
-        </li>
-</ol>
+<h1>Additional</h1>
+
+<div class="blog-entry">
+<p>As is tradition with personal sites I have curated a page of external sites. <a href="/links" title="Sites I Enjoy">Here</a>.
+</p>
+</div>

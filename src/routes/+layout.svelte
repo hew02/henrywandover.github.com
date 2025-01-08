@@ -72,7 +72,6 @@
 				title="Other Stuff">
 				misc.
 			</a>
-
 		</nav>
 
 		<slot />
