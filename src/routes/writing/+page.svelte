@@ -14,10 +14,11 @@
     <meta name="author" content="Henry Wandover" />
 </svelte:head>
 
-<h1>My writing (essays/poetry/articles)</h1>
+<div class="content">
+<h2>My writing (essays/poetry/articles)</h2>
 
 <ol class="none">
-		<li class="writing-entry">
+		<li>
         <a
             href="https://henrywandover.substack.com/p/some-poems"
             target="_blank"
@@ -29,7 +30,7 @@
         </a>
         <p>Winter '24</p>
     </li>
-    <li class="writing-entry">
+    <li>
         <a
             href="https://henrywandover.substack.com/p/the-final-fumes-of-the-rutgers-teachers"
             target="_blank"
@@ -41,7 +42,7 @@
         <p>Spring '23</p>
     </li>
 
-    <li class="writing-entry">
+    <li>
 	    <a
             href={document}
             target="_blank"
@@ -53,3 +54,4 @@
         <p>Fall '23</p>
     </li>
 </ol>
+</div>

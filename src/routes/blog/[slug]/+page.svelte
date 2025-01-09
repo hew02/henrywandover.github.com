@@ -18,6 +18,8 @@
 	<meta name="author" content="Henry Wandover" />
 </svelte:head>
 
-<h1>{@html data.title}</h1>
-<h4 style="margin-bottom:2%;font-style:italic;">{@html sqlDate2Pretty(data.date)}</h4>
-<div class="blog-entry">{@html data.content}</div>
+<div class="content">
+		<h2>{@html data.title}</h2>
+		<p><i>{@html sqlDate2Pretty(data.date)}</i></p>
+		<div>{@html data.content}</div>
+</div>

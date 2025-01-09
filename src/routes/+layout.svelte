@@ -67,17 +67,11 @@
 				title="Blog posts">
 				blog
 			</a>
-			<a
-				href="/misc" class="item" class:active={$page.url.pathname == "/misc"}
-				title="Other Stuff">
-				misc.
-			</a>
 		</nav>
 
 		<slot />
 
     </div>
-
 </div>
 {/if}
 

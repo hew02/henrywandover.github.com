@@ -177,10 +177,10 @@ var sketch = new p5(function(p5)
 
 
 				p5.mouseClicked = function(e) {
-					if (p5.mouseY >= p5.height - 25) {
+					/*if (p5.mouseY >= p5.height - 25) {
 						const event = new CustomEvent('navigate-to');
 						window.dispatchEvent(event);
-					}
+					}*/
 				}
 
 				p5.mouseWheel = function(e) {

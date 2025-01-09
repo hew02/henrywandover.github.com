@@ -9,7 +9,8 @@
     <meta name="author" content="Henry Wandover" />
 </svelte:head>
 
-<h1>Links</h1>
+<div class="content">
+<h2>Links</h2>
 
 <h3>General</h3>
 <ol class="bullet">
@@ -118,3 +119,4 @@
         </a>
         </li>
 </ol>
+</div>

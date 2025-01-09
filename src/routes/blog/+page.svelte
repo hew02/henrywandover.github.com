@@ -16,20 +16,25 @@
     <meta name="author" content="Henry Wandover" />
 </svelte:head>
 
-<h1>Blog</h1>
+<div class="content">
+<h2>Blog</h2>
 
 <ol>
 		{#each data.posts as post}
-			<li id="blog-list-entry">
+			<li class="post-item">
 				<a
 					href={`/blog/${post.slug}`}
 					target="_self"
 					rel="noreferrer noopener"
+					class="post-title"
 					title={post.title}
 				>
 					{post.title}
 				</a>
-				<p style="font-style:italic; opacity:0.8;">{sqlDate2Pretty(post.date)}</p>
+				<div class="post-date">
+				<i>{sqlDate2Pretty(post.date)}</i>
+				</div>
 			</li>
 		{/each}
 </ol>
+</div>

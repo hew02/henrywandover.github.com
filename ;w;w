@@ -37,6 +37,7 @@ body {
 }
 
 a {
+	font-size: 18px;
 	color: #81d70e;
 	text-decoration: none;
 }
@@ -46,30 +47,22 @@ a:hover {
 	text-decoration: line-through;
 }
 
-p, li, a {
+p, li {
 	font-size: 18px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-		font-family: serif, 'NotoSerifHebrew';
-}
-
-
-li.post-item {
+li.blog-list-item {
   display: table;
   width: 100%;
 }
 
-a.post-title {
+blog-list-title span {
 		float: left;
 }
 
-div.post-date i {
-		float: right;
+h1, h2 {
+		font-family: serif;
 }
-
-
-
 
 nav {
 		margin: 3% 2% 5% 2%;
