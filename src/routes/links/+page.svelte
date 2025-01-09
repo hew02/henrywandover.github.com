@@ -38,41 +38,40 @@
         </li>
 
 		<li>
-        <p><a
+        <a
             href="https://www.puzzlescript.net/index.html"
             target="_blank"
 			rel="noreferrer noopener"
 			title="Puzzlescript"
         >
             Puzzlescript
-        </a> a fun & simple game engine for making <em>sokoban</em> games</p>
+        </a> a fun & simple game engine for making <em>sokoban</em> games
         </li>
 
 		<li>
-        <p><a
+        <a
             href="https://www.sourcewatch.org/index.php?title=SourceWatch"
             target="_blank"
 			rel="noreferrer noopener"
 			title="SourceWatch"
         >
             SourceWatch
-        </a>, for keeping an eye on the corporate world</p>
+        </a>, for keeping an eye on the corporate world
         </li>
 
 		<li>
-        <p><a
+       <a
             href="https://www.unionjobs.com/"
             target="_blank"
 			rel="noreferrer noopener"
 			title="unionjobs.com"
         >
             Union Jobs Clearinghouse
-        </a> is a good platform for finding union employment</p>
+        </a> is a good platform for finding union employment
         </li>
-
 </ol>
 
-
+<br>
 
 <h3>Academic Databases</h3>
 <ol class="bullet">
@@ -89,12 +88,12 @@
         </li>
 
 		<li>
-        <p><a
+        <a
             href="https://www.jstor.org/"
             target="_blank"
 			rel="noreferrer noopener"
 			title="IBM VGA font"
-        >JSTOR</a>, <em>classic</em></p>
+        >JSTOR</a>, <i>classic</i>
         </li>
 
 		<li>
