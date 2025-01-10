@@ -17,10 +17,10 @@
     I have been working on a few projects, while an undergraduate at Bard...
 </h3>
 <ol class="bullet">
-    <li>Mainly for my personal usage, <a href="https://yung-turabian.github.io/xtralib/"
+    <li>Mainly for my personal usage, <a href="https://yung-turabian.github.io/reislib/"
                                        target="_blank" rel="noreferrer noopener"
                                        title="View Doxygen pages for my lib">
-        xtralib</a>, is a extension for C/C++ programming. The link takes you to its Doxygen pages.</li>
+        reislib</a>, is a extension for C/C++ programming. The link takes you to its Doxygen pages.</li>
     <li>Starting in a programming languages class, <a href="https://github.com/yung-turabian/hasktan/"
                                                          target="_blank"
                                                          rel="noreferrer noopener"
