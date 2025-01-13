@@ -48,30 +48,37 @@
 
 {#if showSite == true && $page.url.pathname != "/sand"}
 <div id="main-container">
-    <div id="card">
-		<nav>
-			<a 
-				href="/writing" class="item" class:active={$page.url.pathname == "/writing"}>
-				Writing
-			</a>
-			<a  id="nav-home"
-				href="/" class="item" class:active={$page.url.pathname == "/"}>
-				Home
-			</a>
-			<a
-				href="/code" class="item" class:active={$page.url.pathname == "/code"}>
-				Programming
-			</a>
-			<a
-				href="/blog" class="item" class:active={$page.url.pathname == "/blog"}
-				title="Blog posts">
-				Blog
-			</a>
-		</nav>
+<div id="card">
+	<nav>
+		<a
+			href="/writing" class="item" class:active={$page.url.pathname == "/writing"}>
+			Writing
+		</a>
+		<a  id="nav-home"
+			href="/" class="item" class:active={$page.url.pathname == "/"}>
+			Home
+		</a>
+		<a
+			href="/code" class="item" class:active={$page.url.pathname == "/code"}>
+			Programming
+		</a>
+		<a
+			href="/blog" class="item" class:active={$page.url.pathname == "/blog"}
+			title="Blog posts">
+			Blog
+		</a>
+	</nav>
 
-		<slot />
+	<slot />
 
-    </div>
+</div>
+
+<footer>
+	<ul>
+			<li>© 2025 Henry Wandover.</li>
+		</ul>
+</footer>
+
 </div>
 {/if}
 

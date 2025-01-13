@@ -80,24 +80,21 @@ nav {
 }
 
 footer {
-		bottom: 0;
-		position: absolute;
-		margin-bottom: 14px;
+	position: absolute;
+	margin-bottom: 14px;
+	bottom: 0;
 
-		p {
-			font-size: 14px;
-		}
+	ul {
+		list-style-type: none;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-		ul {
-			list-style-type: none;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-		}
-
-		li {
-			white-space: nowrap;
-		}
+	li {
+		white-space: nowrap;
+		font-size: 14px;
+	}
 }
 
 #main-container {
@@ -159,8 +156,7 @@ ul.bullet, ol.bullet {
 	display: flex;
 	flex-direction: column;
 
-	max-width: 90%;
-	min-width: 90%;
+	width: 70%;
 	min-height: 90%;
 	background-color: #101010;
 

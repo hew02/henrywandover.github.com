@@ -30,10 +30,6 @@
 		As is tradition with personal sites I have curated a page of external <a href="/links" title="Sites I Enjoy">sites</a> for myself and others to browse.
  </p>
 
-<footer>
-	<ul>
-			<li><p style="margin-top:1px;margin-right:20px;">Copyright © 2024 Henry Wandover.</p></li>
-		</ul>
-</footer>
+
 
 </div>
