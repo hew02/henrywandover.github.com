@@ -4,7 +4,7 @@
  import { base } from '$app/paths';
 
 
- let showSite = true;
+let showSite = true;
 
  onMount(() => {
 
@@ -38,13 +38,14 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
 </svelte:head>
 
-
+{#if !$page.url.pathname.startsWith('/blog/')}
 <div id="canvas-container">
 <script src="/sketch.js" type="module" async>
 </script>
 <noscript>
 </noscript>
  </div>
+{/if}
 
 {#if showSite == true && $page.url.pathname != "/sand"}
 <div id="main-container">

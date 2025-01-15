@@ -31,7 +31,7 @@ class Fader {
 
 		draw(p5) {
         this.frameTimer = (this.frameTimer + 1) % (this.frameDuration * 3);
-				if(this.opacity >= 120 && 
+				if(this.opacity >= 170 &&
 						this.frameTimer < this.frameDuration * 4) {
 						this.opacity = this.opacity - 10;
 				}

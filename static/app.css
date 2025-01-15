@@ -20,8 +20,6 @@
 	margin: 0;
 	padding: 0;
 
-	color: #dfdfdf;
-
 	font-family: 'SinaNova', 'NotoSerifHebrew', serif;
 }
 
@@ -39,6 +37,7 @@ body {
 
 a {
 	color: #81d70e;
+	background-color: #242424;
 	text-decoration: none;
 }
 
@@ -148,7 +147,6 @@ ul.none, ol.none {
 
 ul.bullet, ol.bullet {
 	list-style-type: disc;
-	color: white;
 	padding-left: 1em;
 }
 
@@ -158,7 +156,7 @@ ul.bullet, ol.bullet {
 
 	width: 70%;
 	min-height: 90%;
-	background-color: #101010;
+	background-color: #efefef;
 
 	overflow: visible;
 

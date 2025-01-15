@@ -8,7 +8,7 @@ import document from '$lib/docs/How_to_Create_a_Surveillance_State__And_How_Libr
 
 
 <svelte:head>
-<title>My Writing | Henry Wandover</title>
+<title>WRITING | Henry Wandover</title>
 <meta name="title" content="Henry Wandover's Writing" />
 <meta
 name="description"

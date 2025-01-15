@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>Programming Projects | Henry Wandover</title>
+    <title>λ | Henry Wandover</title>
     <meta name="title" content="Henry Wandover's Programs" />
     <meta
         name="description"
@@ -11,7 +11,7 @@
 
 
 <div class="content">
-<h2>Programming Related Things</h2>
+<h2>Programming-Related Things</h2>
 
 <h3>
     I have been working on a few projects, while an undergraduate at Bard...
