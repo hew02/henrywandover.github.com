@@ -103,3 +103,15 @@ export function sqlDate2Pretty(bad_str)
 
 				return tov_str;
 }
+
+
+export class vec2 {
+	constructor(x, y) {
+	  this.x = x;
+	  this.y = y;
+	}
+  
+	add(otherVector) {
+	  return new vec2(this.x + otherVector.x, this.y + otherVector.y);
+	}
+}

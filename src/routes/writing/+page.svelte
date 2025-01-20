@@ -1,8 +1,4 @@
 <script>
-
-export const prerender = true;
-export const csr = false;
-
 import document from '$lib/docs/How_to_Create_a_Surveillance_State__And_How_Librarians_Attempted_to_Dismantle_It.pdf';
 </script>
 

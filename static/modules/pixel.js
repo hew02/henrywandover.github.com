@@ -5,10 +5,12 @@ export class Pixel {
 				this.x = x;
 				this.y = y;
 				this.c = " ";
+				this.color = "palegreen";
+				this.layer = 2;
 		}
 
 		draw() {
-				this.pos = addChar(this.c, this.x, this.y);
+				this.pos = addChar(this.c, this.x, this.y, this.color, this.layer);
 		}
 
 		update() {

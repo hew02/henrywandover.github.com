@@ -1,4 +1,4 @@
-import {calculateGrid, asciiScale, rows, cols, addChar, addCharBG, addString} from './p5ASCII.js';
+import {calculateGrid, asciiScale, rows, cols, addChar, addString} from './p5ASCII.js';
  
 import * as hw from './hew.js';
 
@@ -6,7 +6,7 @@ export class Train {
 		constructor(x, y) {
 				this.x = x;
 				this.y = y;
-				this.speed = 2;
+				this.speed = 1;
 
 				this.frameTimer = 0;
 				this.frameDuration = 3;
@@ -44,20 +44,20 @@ export class Train {
 				}
 		}
 
-		draw(p5) {
+		draw() {
 
 		  const x = this.x;
 		  const y = this.y;
 
 
-				addString("_╗__", x, y-3);
-				addString("| ☻|____T_", x, y-2);
-				addString("|_―|_©HW_|►", x, y-1);
+				addString("_╗__", x, y-3, 'palegreen', 2);
+				addString("| ☻|____T_", x, y-2, 'palegreen', 2);
+				addString("|_―|_©HW_|►", x, y-1, 'palegreen', 2);
 		 
 			if(this.frameTimer < this.frameDuration * 1.5) {
-				addString("  O-O-O-øø\\", x, y);
+				addString("  O-O-O-øø\\", x, y, 'palegreen', 2);
 			} else {
-				addString("  ⌀-⌀-⌀-oo\\", x, y);
+				addString("  ⌀-⌀-⌀-oo\\", x, y, 'palegreen', 2);
 			}
       
 
@@ -70,9 +70,9 @@ export class Train {
 		}
 
 
-		drawTrackMarks(p5) {
+		drawTrackMarks() {
 			for (let mark = 0; mark < this.trackMarks.length; mark++) {
-					addCharBG("_", this.trackMarks[mark].x, this.trackMarks[mark].y);
+					addChar("_", this.trackMarks[mark].x, this.trackMarks[mark].y, 'palegreen', 3);
 			}
 		}
 }
