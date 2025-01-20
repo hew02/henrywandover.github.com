@@ -1,54 +1,54 @@
 @font-face {
-	font-family: 'SinaNova';
-	src:
+		font-family: 'SinaNova';
+		src:
 		local('Sina Nova'),
 		local('Sina-Nova'),
 		url('/sina_nova.ttf') format('truetype');
-	font-style: normal;
+		font-style: normal;
 }
 
 @font-face {
-	font-family: 'NotoSerifHebrew';
-	src:
+		font-family: 'NotoSerifHebrew';
+		src:
 		local('Noto Serif Hebrew'),
 		local('Noto-Serif-Hebrew'),
 		url('/NotoSerifHebrew-VariableFont_wdth,wght.ttf') format('truetype');
-	font-style: normal;
+		font-style: normal;
 }
 
 * {
-	margin: 0;
-	padding: 0;
+		margin: 0;
+		padding: 0;
 
-	font-family: 'SinaNova', 'NotoSerifHebrew', serif;
+		font-family: 'SinaNova', 'NotoSerifHebrew', serif;
 }
 
 html {
-	width: 100%;
-	height: 100%;
+		width: 100%;
+		height: 100%;
 }
 
 body {
-	background: #060606;
-	width: 100%;
-	height: 100%;
-	font-size: 1.3em;
+		background: #060606;
+		width: 100%;
+		height: 100%;
+		font-size: 1.3em;
 }
 
 a {
-	color: #81d70e;
-	background-color: #242424;
-	text-decoration: none;
+		color: #81d70e;
+		background-color: #242424;
+		text-decoration: none;
 }
 
 a:hover {
-	color: #64a70b;
-	text-decoration: line-through;
+		color: #64a70b;
+		text-decoration: line-through;
 }
 
 li.post-item {
-  display: table;
-  width: 100%;
+		display: table;
+		width: 100%;
 }
 
 a.post-title {
@@ -79,129 +79,129 @@ nav {
 }
 
 footer {
-	position: absolute;
-	margin-bottom: 14px;
-	bottom: 0;
+		position: absolute;
+		margin-bottom: 14px;
+		bottom: 0;
 
-	ul {
-		list-style-type: none;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+		ul {
+				list-style-type: none;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+		}
 
-	li {
-		white-space: nowrap;
-		font-size: 14px;
-	}
+		li {
+				white-space: nowrap;
+				font-size: 14px;
+		}
 }
 
 #main-container {
-	display: flex;
-	justify-content: center;
-	min-height: 100%;
-	width: 100%;
+		display: flex;
+		justify-content: center;
+		min-height: 100%;
+		width: 100%;
 
-	position: absolute;
-	z-index: 999;
-	top: 0;
-
-	@media (max-width: 768px) {
-		#card #ai-badge {
-			width: 100px;
-			height: 32px;
-			top: 2%;
-			right: 2%;
-		}
-	}
-
-	#card #ai-badge {
 		position: absolute;
-		right: 5%;
-		top: 4%;
-		width: 131px;
-		height: 42px;
-		background-image: url(
-			"./Written-By-Human-Not-By-AI-Badge-white.svg"
-		);
-		background-size: cover;
-		transition: background-image 1s ease-in-out;
-		transform: translateX(0);
-	}
+		z-index: 999;
+		top: 0;
 
-	#card #ai-badge:hover {
-		background-image: url(
-			"./Written-By-Human-Not-By-AI-Badge-black.svg"
-		);
-	}
+		@media (max-width: 768px) {
+				#card #ai-badge {
+						width: 100px;
+						height: 32px;
+						top: 2%;
+						right: 2%;
+				}
+		}
+
+		#card #ai-badge {
+				position: absolute;
+				right: 5%;
+				top: 4%;
+				width: 131px;
+				height: 42px;
+				background-image: url(
+				"./Written-By-Human-Not-By-AI-Badge-white.svg"
+				);
+				background-size: cover;
+				transition: background-image 1s ease-in-out;
+				transform: translateX(0);
+		}
+
+		#card #ai-badge:hover {
+				background-image: url(
+				"./Written-By-Human-Not-By-AI-Badge-black.svg"
+				);
+		}
 }
 
 
 ul.none, ol.none {
-	list-style-type: none;
-	li {
-		p {
+		list-style-type: none;
+		li {
+				p {
+				}
 		}
-	}
 }
 
 ul.bullet, ol.bullet {
-	list-style-type: disc;
-	padding-left: 1em;
+		list-style-type: disc;
+		padding-left: 1em;
 }
 
 #card {
-	display: flex;
-	flex-direction: column;
+		display: flex;
+		flex-direction: column;
 
-	width: 70%;
-	min-height: 90%;
-	background-color: #efefef;
+		width: 70%;
+		min-height: 90%;
+		background-color: #efefef;
 
-	overflow: visible;
+		overflow: visible;
 
-	-ms-overflow-style: none;
+		-ms-overflow-style: none;
 
-	.content {
-		padding: 1em;
-		max-width: 80em;
-		line-height: 1.4;
-	}
+		.content {
+				padding: 1em;
+				max-width: 80em;
+				line-height: 1.4;
+		}
 
-	.content p {
-		margin: 0 0 18px 0;
-	}
+		.content p {
+				margin: 0 0 18px 0;
+		}
 
-	.content h2 {
-		margin: 0 0 10px 0;
-	}
+		.content h2 {
+				margin: 0 0 10px 0;
+		}
 }
 
 
 
 img {
-	max-width: 100%;
-	border: none;
+		max-width: 100%;
+		border: none;
 }
 
 
 
 #canvas-container {
-  max-width: 100%;
-	height: 99%;
-	border: none;
-	position: relative;
+		max-width: 100%;
+		height: 99%;
+		border: none;
+		position: relative;
 
-	canvas, img {
-		position: absolute;
-		top: 0;
-		z-index: 1;
-	}
+		canvas, img {
+				position: absolute;
+				top: 0;
+				z-index: 1;
+		}
 
-	img {
-		margin-left: auto;
-		margin-right: auto;
-	}
+		img {
+				margin-left: auto;
+				margin-right: auto;
+		}
 }
 
 
