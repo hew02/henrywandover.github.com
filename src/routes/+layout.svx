@@ -47,7 +47,7 @@ rel="stylesheet"
 </div>
 {/if}
 
-{#if showSite == true && $page.url.pathname != "/sand"}
+{#if showSite == true}
 <div id="main-container">
 <div id="card">
 <nav>
@@ -60,7 +60,7 @@ href="/" class="item" class:active={$page.url.pathname == "/"}>
 Home
 </a>
 <a
-href="/code" class="item" class:active={$page.url.pathname == "/code"}>
+href="/programming" class="item" class:active={$page.url.pathname == "/programming"}>
 Programming
 </a>
 <a

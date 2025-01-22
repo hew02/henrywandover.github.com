@@ -59,19 +59,11 @@ div.post-date i {
 		float: right;
 }
 
-
-
-
 nav {
-		margin: 1.8em 1em 1.2em 1em;
+		margin: 1em 0.5em 0.5em 0.5em;
 		padding: 1em 0 1em 1.8em;
 		word-spacing: 1em;
 		background-color: #242424;
-
-		a {
-				font-size: 22px;
-		}
-
 		a.active {
 				text-decoration-line: underline;
 				font-weight: bold;
@@ -156,11 +148,7 @@ ul.bullet, ol.bullet {
 
 		width: 70%;
 		min-height: 90%;
-		background-color: #efefef;
-
-		overflow: visible;
-
-		-ms-overflow-style: none;
+		background-color: #fcfcfc;
 
 		.content {
 				padding: 1em;
@@ -177,14 +165,10 @@ ul.bullet, ol.bullet {
 		}
 }
 
-
-
 img {
 		max-width: 100%;
 		border: none;
 }
-
-
 
 #canvas-container {
 		max-width: 100%;
@@ -203,5 +187,3 @@ img {
 				margin-right: auto;
 		}
 }
-
-
