@@ -4,10 +4,10 @@ export const prerender = true;
 export const csr = false;
 
 export const load: PageLoad = async () => {
-		const posts = import.meta.glob('/static/posts/*.htm', { as: 'raw' });
+       const posts = import.meta.glob('/static/posts/*.html', { as: 'raw' });
 
-		const allPosts = await Promise.all(
-				Object.entries(posts).map(async ([path, loader]) => {
+	   const allPosts = await Promise.all(
+	       Object.entries(posts).map(async ([path, loader]) => {
 						const content = await loader();
 						const metadataMatch = content.match(/^---\n([\s\S]+?)\n---/);
 						const metadata = metadataMatch

@@ -7,7 +7,7 @@ export const csr = false;
 
 export const load: PageLoad = async ({ params, fetch }) => {
 
-	const response = await fetch(`/posts/${params.slug}.htm`);
+	const response = await fetch(`/posts/${params.slug}.html`);
 
 	if (response.ok) {
 		const rawContent = await response.text();

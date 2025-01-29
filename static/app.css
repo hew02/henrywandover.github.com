@@ -128,18 +128,12 @@ footer {
 		}
 }
 
+ol,ul {
+		list-style-position: inside;
+}
 
 ul.none, ol.none {
 		list-style-type: none;
-		li {
-				p {
-				}
-		}
-}
-
-ul.bullet, ol.bullet {
-		list-style-type: disc;
-		padding-left: 1em;
 }
 
 #card {

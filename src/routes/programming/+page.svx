@@ -13,7 +13,7 @@
 <div class="content">
 <h2>Programming-Related Things</h2>
 
-<ol class="bullet">
+<ul>
     <li>Mainly for my personal usage, <a href="https://yung-turabian.github.io/reislib/"
                                        target="_blank" rel="noreferrer noopener"
                                        title="View Doxygen pages for my lib">
@@ -31,5 +31,5 @@
         title="Game">Turbulent Trader</a>
             is a game orginating from a game jam, one of my first game projects that is playable!
     </li>
-</ol>
+</ul>
 </div>

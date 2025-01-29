@@ -9,7 +9,7 @@
 	<meta name="title" content="{data.title} | Henry Wandover" />
 	<meta
 		name="description"
-		content={data.abstract}
+		content={data.description}
 	/>
 	<meta name="keywords" content={data.keywords} />
 	<meta name="author" content="Henry Wandover" />

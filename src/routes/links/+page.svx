@@ -13,7 +13,7 @@
 <h2>Links</h2>
 
 <h3>General</h3>
-<ol class="bullet">
+<ul>
 
 		<li>
         <a
@@ -89,12 +89,12 @@
            code abbey 
         </a>
         </li>
-</ol>
+</ul>
 
 <br>
 
 <h3>Academic Databases</h3>
-<ol class="bullet">
+<ul>
 
 		<li>
         <a
@@ -137,5 +137,5 @@
             LIBRARYSTACK
         </a>
         </li>
-</ol>
+</ul>
 </div>
