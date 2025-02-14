@@ -16,6 +16,7 @@
 </svelte:head>
 
 <div class="content">
+        <a href="/">&lt- Home</a>
 		<h2>{@html data.title}</h2>
 		<p><i>{@html sqlDate2Pretty(data.date)}</i></p>
 		<div>{@html data.content}</div>

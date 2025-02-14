@@ -1,32 +1,156 @@
+<script lang="ts">
+  import document from '$lib/docs/How_to_Create_a_Surveillance_State__And_How_Librarians_Attempted_to_Dismantle_It.pdf';
+
+  import {sqlDate2Pretty} from '$lib/hew.js';
+  import type { PageData } from './$types';
+  let { data }: { data: PageData } = $props();
+</script>
+
 <svelte:head>
-    <title>Henry Wandover</title>
-    <meta name="title" content="Henry Wandover" />
-    <meta
-        name="description"
-        content="A personal site made by Henry Wandover, for Henry Wandover"
-        />
-    <meta name="keywords" content="Computer Science, Writing, Blog" />
-    <meta name="author" content="Henry Wandover" />
+  <title>Henry Wandover</title>
+  <meta name="title" content="Henry Wandover" />
+  <meta
+    name="description"
+    content="A personal site made by Henry Wandover, for Henry Wandover"
+    />
+  <meta name="keywords" content="Computer Science, Writing, Blog" />
+  <meta name="author" content="Henry Wandover" />
 </svelte:head>
 <!--<a id="ai-badge" href="https://notbyai.fyi/" target="_blank" rel="noreferrer noopener"></a>-->
+
 <div class="content">
-    <h1>Henry Wandover</h1>
-    <p>
-        I'm currently a student at Bard College.
-        I write code at school, as well as my home in Philadelphia.
-        With only one semester left to go, I'm currently looking for work, either in software or game development.
-        If you have an opportunity, or know of one, check out my <a href="/Resume.pdf" hreflang="en" target="_blank" rel="noreferrer noopener" type="application/pdf">résumé</a>
-        and the rest of my site.
-    </p>
-    <p>
-        The ideal way of getting in contact is by email: <b>henrywandover[at]gmail[dot]com</b>.
-				I don't really have much in the way of social media aside from <a aria-label="Social media link" href="https://www.linkedin.com/in/henrywandover/" target="_blank" rel="noreferrer noopener" title="LinkedIn">LinkedIn</a>
-        (which I am not a huge fan of). There are more programming-related things on <a aria-label="Social media link" href="https://github.com/yung-turabian" target="_blank" rel="noreferrer noopener" title="GitHub">GitHub</a>
-        and more artistic endeavours on my <a aria-label="Social media link" href="https://www.youtube.com/@yungturabian" target="_blank" rel="noreferrer noopener" title="YouTube">YouTube</a>.
-    </p>
-    <p>
-        As is tradition with personal sites, I have curated a page of external <a href="/links" title="Sites I Enjoy">sites</a> for myself and others to enjoy.
-    </p>
+  <h1 style="padding-bottom:0.4em;">Henry Wandover's Web Page</h1>
+  <div style="overflow-x:auto;">
+    <table>
+      <tbody>
+        <tr>
+          <td width="50%" valign="top" style="padding-right: 1em;">
+            <h2>About Me</h2>
+            <p>
+              I'm currently a student at Bard College.
+              I write code at school, as well as my home in Philadelphia.
+              With only one semester left to go, I'm currently looking for work, either in software or game development.
+              If you have an opportunity, or know of one, check out my <a href="/Resume.pdf" hreflang="en" target="_blank" rel="noreferrer noopener" type="application/pdf">résumé</a>
+              and the rest of my site.
+            </p>
+            <p>
+              The ideal way of getting in contact is by email: <b>henrywandover[at]gmail[dot]com</b>.
+              I don't really have much in the way of social media aside from <a aria-label="Social media link" href="https://www.linkedin.com/in/henrywandover/" target="_blank" rel="noreferrer noopener" title="LinkedIn">LinkedIn</a>
+              (which I am not a huge fan of). There are more programming-related things on <a aria-label="Social media link" href="https://github.com/yung-turabian" target="_blank" rel="noreferrer noopener" title="GitHub">GitHub</a>
+              and more artistic endeavours on my <a aria-label="Social media link" href="https://www.youtube.com/@yungturabian" target="_blank" rel="noreferrer noopener" title="YouTube">YouTube</a>.
+            </p>
+            <p>
+              As is tradition with personal sites, I have curated a page of external <a href="/links" title="Sites I Enjoy">sites</a> for myself and others to enjoy. Here's an extra one: meet my father, a <a href="https://mambomovers.com/Rondog.html">man of many words</a>.
+            </p>
+          </td>
+          <td width="50%" valign="top">
+            <h2>Projects</h2>
 
+            <ul>
+              <li>
+                <a href="https://github.com/yung-turabian/reislib/">reislib</a>
+                <br>
+                <small>C/C++ stdlib extension; <a href="https://yung-turabian.github.io/reislib/" title="View Doxygen pages for my lib">docs</a></small>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/yung-turabian/hasktan/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  title="Git repository">hasktan</a>
+                <br>
+                <small>Toy functional language</small>
+              </li>
+              <li>
+                <a
+                  href="https://yung-turabian.itch.io/turbulenttrader"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  title="Game">Turbulent Trader</a>
+                <br>
+                <small>Game jam game about bargaining</small>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/yung-turabian/zephyr"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  title="Links Tools">zephyr</a>
+                <br>
+                <small>Live reloading for Links</small>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%" valign="top">
+            <h2>My Writing (Essays/Poetry/Articles)</h2>
+
+            <ol class="none">
+              <li>
+                <a
+                  href="https://henrywandover.substack.com/p/some-poems"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  title="Substack article"
+                  dir="rtl"
+		          >
+                  כמה שירים (Some Poems)
+		        </a>
+		        <br>
+		        <small>Winter '24</small>
+		      </li>
+		      <li>
+		        <a
+		          href="https://henrywandover.substack.com/p/the-final-fumes-of-the-rutgers-teachers"
+		          target="_blank"
+		          rel="noreferrer noopener"
+		          title="Substack article"
+		          >
+		          The Final Fumes of the Rutgers Teachers Strike
+		        </a>
+		        <br>
+		        <small>Spring '23</small>
+		      </li>
+
+		      <li>
+		        <a
+		          href={document}
+		          target="_blank"
+		          rel="noreferrer noopener"
+		          title="PDF attachment">
+		          On Creating a Surveillance State
+		        </a>
+		        <br>
+		        <small>Fall '23</small>
+		      </li>
+		    </ol>
+          </td>
+          <td width="50%" valign="top">
+            <h2>Blog Posts</h2>
+
+            <ol>
+              {#each data.posts as post}
+              <li class="post-item">
+                <a
+                  href={`/blog/${post.slug}`}
+                  target="_self"
+                  rel="noreferrer noopener"
+                  class="post-title"
+                  title={post.title}
+                  >
+                  {post.title}
+                </a>
+                <div class="post-date">
+                  <i>{sqlDate2Pretty(post.date)}</i>
+                </div>
+              </li>
+              {/each}
+            </ol>
+          </td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
-
