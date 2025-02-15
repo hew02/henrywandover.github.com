@@ -10,7 +10,7 @@
 </svelte:head>
 
 <div class="content">
-    <a href="/">&lt- Home</a>
+    <a href="/"><img src="/back.png" /></a>
     <h2>Links</h2>
 
     <h3>General</h3>

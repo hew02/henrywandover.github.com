@@ -40,8 +40,14 @@
               and more artistic endeavours on my <a aria-label="Social media link" href="https://www.youtube.com/@yungturabian" target="_blank" rel="noreferrer noopener" title="YouTube">YouTube</a>.
             </p>
             <p>
-              As is tradition with personal sites, I have curated a page of external <a href="/links" title="Sites I Enjoy">sites</a> for myself and others to enjoy. Here's an extra one: meet my father, a <a href="https://mambomovers.com/Rondog.html">man of many words</a>.
+              As is tradition with personal sites, I have curated a page of external 
+							<a href="/links" title="Sites I Enjoy">sites</a> for myself and others to enjoy. 
+							Here's an extra one: meet my father, a <a href="https://mambomovers.com/Rondog.html">man of many words</a>.
             </p>
+						<p>
+								My <a href="/my-pgp-key.txt" title="text file">🗝PGP pubkey</a>, for those interested in sending encrypted messages or
+								verifying any of my code.
+						</p>
           </td>
           <td width="50%" valign="top">
             <h2>Projects</h2>
@@ -83,7 +89,7 @@
           </td>
         </tr>
         <tr>
-          <td width="50%" valign="top">
+          <td width="50%" valign="top" style="padding-right: 1em;">
             <h2>My Writing (Essays/Poetry/Articles)</h2>
 
             <ol class="none">
@@ -141,9 +147,8 @@
                   >
                   {post.title}
                 </a>
-                <div class="post-date">
-                  <i>{sqlDate2Pretty(post.date)}</i>
-                </div>
+								<br>
+								<small>{sqlDate2Pretty(post.date)}</small>
               </li>
               {/each}
             </ol>

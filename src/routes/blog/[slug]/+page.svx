@@ -16,8 +16,8 @@
 </svelte:head>
 
 <div class="content">
-        <a href="/">&lt- Home</a>
+        <a href="/"><img src="/back.png" /></a>
 		<h2>{@html data.title}</h2>
-		<p><i>{@html sqlDate2Pretty(data.date)}</i></p>
+		<p>{@html sqlDate2Pretty(data.date)}</p>
 		<div>{@html data.content}</div>
 </div>
