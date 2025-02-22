@@ -39,6 +39,9 @@
               (which I am not a huge fan of). There are more programming-related things on <a aria-label="Social media link" href="https://github.com/yung-turabian" target="_blank" rel="noreferrer noopener" title="GitHub">GitHub</a>
               and more artistic endeavours on my <a aria-label="Social media link" href="https://www.youtube.com/@yungturabian" target="_blank" rel="noreferrer noopener" title="YouTube">YouTube</a>.
             </p>
+						<p>
+								
+						</p>
             <p>
               As is tradition with personal sites, I have curated a page of external 
 							<a href="/links" title="Sites I Enjoy">sites</a> for myself and others to enjoy. 
@@ -83,7 +86,12 @@
                   rel="noreferrer noopener"
                   title="Links Tools">zephyr</a>
                 <br>
-                <small>Live reloading for Links</small>
+                <small>Live reloading for <a
+                  href="https://www.links-lang.org"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  title="Links homepage"
+		              >Links</a></small>
               </li>
             </ul>
           </td>
