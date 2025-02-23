@@ -21,10 +21,10 @@
 		</li>
 		<li>
 				<a 
-				href="https://github.com/yung-turabian/hasktan/" 
+				href="https://github.com/yung-turabian/hasqtan/" 
 				target="_blank"
         rel="noreferrer noopener"
-				title="Git repository">hasktan</a>
+				title="Git repository">hasqtan</a>
 				<br>
 				<small>Toy functional language</small>
 		</li>
