@@ -48,7 +48,7 @@
 							Here's an extra one: meet my father, a <a href="https://mambomovers.com/Rondog.html">man of many words</a>.
             </p>
 						<p>
-								My <a href="/my-pgp-key.txt" title="text file">🗝PGP pubkey</a>, for those interested in sending encrypted messages or
+								My <a href="/pgp.txt" title="text file">🗝PGP pubkey</a>, for those interested in sending encrypted messages or
 								verifying any of my code.
 						</p>
           </td>
