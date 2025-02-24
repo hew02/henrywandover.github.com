@@ -14,17 +14,12 @@
     <h2>Links</h2>
 
     <h3>General</h3>
+
     <ul>
 
 		<li>
-            <a
-                href="https://www.gjtorikian.com/Earthbound-Battle-Backgrounds-JS/?layer1=23&layer2=61"
-                target="_blank"
-			    rel="noreferrer noopener"
-			    title="Earthbound battle background maker"
-                >
-                Earthbound battle background maker
-            </a>
+        <a href="https://www.gjtorikian.com/Earthbound-Battle-Backgrounds-JS/?layer1=23&layer2=61" target="_blank" rel="noreferrer noopener"
+			     title="Earthbound battle background maker">Earthbound battle background maker</a>
         </li>
 
 		<li>
@@ -95,6 +90,7 @@
     <br>
 
     <h3>Academic Databases</h3>
+
     <ul>
 
 		<li>
@@ -139,4 +135,26 @@
             </a>
         </li>
     </ul>
+
+		<br>
+
+		<h3>Type Theory</h3>
+
+    <ul>
+
+		<li><a href="https://kar.kent.ac.uk/20998/1/ttfp.pdf" target="_blank" rel="noreferrer noopener"
+			     title="type-theory-and-functional-programming">Type Theory & Functional Programming</a> by Simon Thompson</li>
+    </ul>
+
+		<br>
+
+		<h3>Algorithms</h3>
+
+    <ul>
+
+		<li><a href="https://www.youtube.com/playlist?list=PLKX7b2H72fI_uRam3mZbNC7-6TcwTltVd" target="_blank" rel="noreferrer noopener"
+			     title="Helpful videos on aglorithms">YouTube playlist</a></li>
+    </ul>
+
+
 </div>
