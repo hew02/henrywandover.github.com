@@ -80,11 +80,22 @@
                 href="https://www.codeabbey.com/"
                 target="_blank"
 			    rel="noreferrer noopener"
-			    title="projecteuler.com"
+			    title="codeabbey.com"
                 >
                 code abbey
             </a>
         </li>
+		<li>
+            <a
+                href="https://www.bartleby.com/lit-hub/the-elements-of-style/"
+                target="_blank"
+			    rel="noreferrer noopener"
+			    title="elements-of-style-pdf"
+                >
+                The Elements of Style
+            </a>
+        </li>
+
     </ul>
 
     <br>
