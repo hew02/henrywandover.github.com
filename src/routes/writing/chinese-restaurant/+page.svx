@@ -1,0 +1,37 @@
+<svelte:head>
+	<title>כמה שירים (Some Poems) | Henry Wandover</title>
+	<meta name="title" content="Henry Wandover's Writing" />
+	<meta
+		name="description"
+		content="A personal site made by Henry Wandover, for Henry Wandover"
+		/>
+	<meta name="keywords" content="Computer Science, Writing, Blog" />
+	<meta name="author" content="Henry Wandover" />
+</svelte:head>
+
+<div class="content">
+    <a href="/"><img src="/back.png" /></a>
+		<h2>Chinese Restaurant</h2>
+		<br />
+
+		<p>
+		Tears in a Chinese restaurant,
+
+		Sodium droplets mixing with MSG.
+
+		The chemical reaction in her head, is
+
+		Much more interesting than
+
+		The watercolor appearing on her plate.
+
+		What man? Or woman?
+
+		What cliche?
+
+		While dull, still
+
+		Can cut and mange the foolhardy.
+		</p>
+		
+</div>
