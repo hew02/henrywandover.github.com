@@ -15,22 +15,14 @@
 		<br />
 
 		<p>
-		Tears in a Chinese restaurant,
-
-		Sodium droplets mixing with MSG.
-
-		The chemical reaction in her head, is
-
-		Much more interesting than
-
-		The watercolor appearing on her plate.
-
-		What man? Or woman?
-
-		What cliche?
-
-		While dull, still
-
+		Tears in a Chinese restaurant,<br>
+		Sodium droplets mixing with MSG.<br>
+		The chemical reaction in her head, is<br>
+		Much more interesting than<br>
+		The watercolor appearing on her plate.<br>
+		What man? Or woman?<br>
+		What cliche?<br>
+		While dull, still<br>
 		Can cut and mange the foolhardy.
 		</p>
 		
