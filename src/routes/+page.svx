@@ -100,8 +100,19 @@
           <td width="50%" valign="top" style="padding-right: 1em;">
             <h2>My Writing (Essays/Poetry/Articles)</h2>
 
-            <ol class="none">
-              <li>
+           <ol class="none">
+           <li>
+                <a
+                  href="./writing/chinese-restaurant"
+                  rel="noreferrer noopener"
+                  title="Poem"
+		          >
+								  Chinese Restaurant 
+		        </a>
+		        <br>
+		        <small>Spring '25</small>
+		      </li>
+           <li>
                 <a
                   href="./writing/some-poems"
                   rel="noreferrer noopener"

@@ -12,7 +12,7 @@
 <div class="content">
     <a href="/"><img src="/back.png" /></a>
 		<h2>Chinese Restaurant</h2>
-		<br />
+		<br>
 
 		<p>
 		Tears in a Chinese restaurant,<br>
