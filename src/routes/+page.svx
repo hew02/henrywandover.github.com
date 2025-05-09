@@ -57,7 +57,7 @@
 
             <ul>
               <li>
-                <a href="https://github.com/yung-turabian/reislib/">reislib</a>
+                <a href="https://github.com/yung-turabian/libreis/">libreis</a>
                 <br>
                 <small>C/C++ stdlib extension; <a href="https://yung-turabian.github.io/reislib/" title="View Doxygen pages for my lib">docs</a></small>
               </li>
@@ -100,13 +100,23 @@
           <td width="50%" valign="top" style="padding-right: 1em;">
             <h2>My Writing (Essays/Poetry/Articles)</h2>
 
-            <ol class="none">
-              <li>
+           <ol class="none">
+           <li>
                 <a
-                  href="https://henrywandover.substack.com/p/some-poems"
-                  target="_blank"
+                  href="./writing/chinese-restaurant"
                   rel="noreferrer noopener"
-                  title="Substack article"
+                  title="Poem"
+		          >
+								  Chinese Restaurant 
+		        </a>
+		        <br>
+		        <small>Spring '25</small>
+		      </li>
+           <li>
+                <a
+                  href="./writing/some-poems"
+                  rel="noreferrer noopener"
+                  title="Poem"
                   dir="rtl"
 		          >
                   כמה שירים (Some Poems)
@@ -116,10 +126,9 @@
 		      </li>
 		      <li>
 		        <a
-		          href="https://henrywandover.substack.com/p/the-final-fumes-of-the-rutgers-teachers"
-		          target="_blank"
+		          href="./writing/final-fumes-of-the-rutgers-teacher-strike"
 		          rel="noreferrer noopener"
-		          title="Substack article"
+		          title="Article"
 		          >
 		          The Final Fumes of the Rutgers Teachers Strike
 		        </a>
