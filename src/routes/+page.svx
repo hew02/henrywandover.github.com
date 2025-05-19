@@ -52,14 +52,14 @@
 								verifying any of my code.
 						</p>
           </td>
-          <td width="50%" valign="top">
+          <td width="50%" valign="top" style="float:right">
             <h2>Projects</h2>
 
             <ul>
               <li>
                 <a href="https://github.com/yung-turabian/libreis/">libreis</a>
                 <br>
-                <small>C/C++ stdlib extension; <a href="https://yung-turabian.github.io/reislib/" title="View Doxygen pages for my lib">docs</a></small>
+                <small>A general-purpose C/C++ library; <a href="https://yung-turabian.github.io/reislib/" title="View Doxygen pages for my lib">docs here</a></small>
               </li>
               <li>
                 <a
@@ -149,7 +149,7 @@
 		      </li>
 		    </ol>
           </td>
-          <td width="50%" valign="top">
+          <td width="50%" valign="top" style="float:right">
             <h2>Blog Posts</h2>
 
             <ol>
