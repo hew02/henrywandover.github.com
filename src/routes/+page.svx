@@ -27,11 +27,10 @@
           <td width="50%" valign="top" style="padding-right: 1em;">
             <h2>About Me</h2>
             <p>
-              I'm currently a student at Bard College.
+              I'm a recent graduate from Bard College in the computer science program.
               I write code at school, as well as my home in Philadelphia.
-              With only one semester left to go, I'm currently looking for work, either in software or game development.
-              If you have an opportunity, or know of one, check out my <a href="/Resume.pdf" hreflang="en" target="_blank" rel="noreferrer noopener" type="application/pdf">résumé</a>
-              and the rest of my site.
+              Currently, I am looking for work, ideally, either in software or game development.
+              If you have an opportunity, or know of one, check out my <a href="/Resume.pdf" hreflang="en" target="_blank" rel="noreferrer noopener" type="application/pdf">résumé</a> and the rest of my site.
             </p>
             <p>
               The ideal way of getting in contact is by email: <b>henrywandover[at]gmail[dot]com</b>.
@@ -102,6 +101,19 @@
 
            <ol class="none">
            <li>
+                <a
+                  href="./Journey_to_the_Ivory_Tower__Making_Links__Polymorphism_Ad_Hoc.pdf"
+								  target="_blank"
+                  rel="noreferrer noopener"
+                  title="Bard Senior Project"
+		          >
+								  Journey to the Ivory Tower: Making Links' Polymorhpism Ad Hoc 
+		        </a>
+		        <br>
+		        <small>Spring '25</small>
+		      </li>
+
+					 <li>
                 <a
                   href="./writing/chinese-restaurant"
                   rel="noreferrer noopener"
