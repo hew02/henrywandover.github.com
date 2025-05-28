@@ -16,8 +16,12 @@
 </svelte:head>
 
 <div class="content">
-        <a href="/"><img src="/back.png" /></a>
+    <a href="/"><img src="/back.png" /></a>
 		<h2>{@html data.title}</h2>
-		<p>{@html sqlDate2Pretty(data.date)}</p>
+		<p>{@html sqlDate2Pretty(data.date)} 
+		{#if data.updated}
+				<small style="font-size:0.7em;">(Updated {@html sqlDate2Pretty(data.updated)})</small>
+		{/if}
+		</p>
 		<div>{@html data.content}</div>
 </div>
