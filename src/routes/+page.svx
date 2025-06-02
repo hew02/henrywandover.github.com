@@ -28,9 +28,9 @@
             <h2>About Me</h2>
             <p>
               I'm a recent graduate from Bard College in the computer science program.
-              I write code at school, as well as my home in Philadelphia.
-              Currently, I am looking for work, ideally, either in software or game development.
-              If you have an opportunity, or know of one, check out my <a href="/Resume.pdf" hreflang="en" target="_blank" rel="noreferrer noopener" type="application/pdf">résumé</a> and the rest of my site.
+							I currently live in Philadelphia, where I work on projects related to programming languages and useful desktop tools.
+              Along with what I do in my freetime, I am also looking for work, ideally, either in backend software or game development.
+              If you have an opportunity, or know of one, feel free to check out my <a href="/Resume.pdf" hreflang="en" target="_blank" rel="noreferrer noopener" type="application/pdf">résumé</a>, as well as the rest of my site.
             </p>
             <p>
               The ideal way of getting in contact is by email: <b>henrywandover[at]gmail[dot]com</b>.
@@ -43,13 +43,12 @@
 						</p>
             <p>
               As is tradition with personal sites, I have curated a page of external 
-							<a href="/links" title="Sites I Enjoy">sites</a> for myself and others to enjoy. 
+							<a href="/links" title="Sites I Enjoy">sites</a> for a range of interests. 
 							Here's an extra one: meet my father, a <a href="https://mambomovers.com/Rondog.html">man of many words</a>.
             </p>
-						<p>
-								My <a href="/pgp.txt" title="text file">🗝PGP pubkey</a>, for those interested in sending encrypted messages or
-								verifying any of my code.
-						</p>
+						<ul>
+								<li><p><a href="/pgp.txt" title="text file">My PGP pubkey</a></p></li>
+						</ul>
           </td>
           <td width="50%" valign="top" style="float:right">
             <h2>Projects</h2>
