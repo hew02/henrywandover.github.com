@@ -1,16 +1,15 @@
 import * as hw from './hew.js';
-import {addChar, spaceAvailable} from './p5ASCII.js';
-import {Pixel} from './pixel.js';
+import * as rog from '../nSlash/nSlash.js';
 
 export let totalSmokePixels = 0;
 
 let layer_num = 1;
 
-class SmokePixel extends Pixel {
+class SmokePixel extends rog.Pixel {
   constructor(x, y, vX = 0, spawnMod = 0.0) {
     super(x, y);
 
-    this.c = 'ó';
+    this.sprite = 'ó';
     this.age = 0;
 	this.color = 'gray';
 	this.layer = layer_num;
@@ -26,7 +25,7 @@ class SmokePixel extends Pixel {
   }
 
   draw() {
-    this.pos = addChar(this.c, this.x, this.y, this.color, this.layer);
+    this.pos = rog.addChar(this.c, this.x, this.y, this.color, this.layer);
   }
 
   update() {
@@ -76,10 +75,10 @@ class SmokeCloud {
     let _x = x;
     let _y = y;
 
-    if (spaceAvailable(x, y, layer_num)) {
-    } else if (spaceAvailable(x - 1, y, layer_num)) {
+    if (rog.spaceAvailable(x, y, layer_num)) {
+    } else if (rog.spaceAvailable(x - 1, y, layer_num)) {
       _x = _x - 1;
-    } else if (spaceAvailable(x + 1, y, layer_num)) {
+    } else if (rog.spaceAvailable(x + 1, y, layer_num)) {
       _x = _x + 1;
     } else {
       return;
@@ -110,10 +109,10 @@ export class SmokePlume {
     let _x = x;
     let _y = y;
 
-    if (spaceAvailable(x, y, layer_num)) {
-    } else if (spaceAvailable(x - 1, y, layer_num)) {
+    if (rog.spaceAvailable(x, y, layer_num)) {
+    } else if (rog.spaceAvailable(x - 1, y, layer_num)) {
       _x = _x - 1;
-    } else if (spaceAvailable(x + 1, y, layer_num)) {
+    } else if (rog.spaceAvailable(x + 1, y, layer_num)) {
       _x = _x + 1;
     } else {
       return;
@@ -165,10 +164,10 @@ function addSmoke(x, y, vX) {
   let _x = x;
   let _y = y;
 
-  if (spaceAvailable(x, y, layer_num)) {
-  } else if (spaceAvailable(x - 1, y, layer_num)) {
+  if (rog.spaceAvailable(x, y, layer_num)) {
+  } else if (rog.spaceAvailable(x - 1, y, layer_num)) {
     _x = _x - 1;
-  } else if (spaceAvailable(x + 1, y, layer_num)) {
+  } else if (rog.spaceAvailable(x + 1, y, layer_num)) {
     _x = _x + 1;
   } else {
     return;

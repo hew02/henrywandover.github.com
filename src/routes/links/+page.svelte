@@ -1,3 +1,6 @@
+<script lang="ts">
+	import back_button from "$lib/imgs/back.png";
+</script>
 <svelte:head>
     <title>Cool Sites | Henry Wandover</title>
     <meta name="title" content="Links" />
@@ -10,7 +13,7 @@
 </svelte:head>
 
 <div class="content">
-    <a href="/"><img src="/back.png" /></a>
+    <a href="/"><img src={back_button} /></a>
     <h2>Links</h2>
 
     <h3>General</h3>
@@ -93,6 +96,37 @@
 			    title="elements-of-style-pdf"
                 >
                 The Elements of Style
+            </a>
+        </li>
+		<li>
+            <a
+                href="https://script-fu.github.io/funky/"
+                target="_blank"
+			    rel="noreferrer noopener"
+			    title="Funky"
+                >
+								Great stater resource on using Script-Fu for GIMP
+            </a>
+        </li>
+		<li>
+            <a
+                href="https://beej.us/guide/bgc/html/split/index.html"
+                target="_blank"
+			    rel="noreferrer noopener"
+			    title="Beej"
+                >
+								Beej's Guide to C Programming	
+            </a>
+        </li>
+
+		<li>
+            <a
+                href="https://www.cs.cornell.edu/home/kleinber/networks-book/"
+                target="_blank"
+			    rel="noreferrer noopener"
+			    title="Networks"
+                >
+								 Networks, Crowds, and Markets: 	
             </a>
         </li>
 

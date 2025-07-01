@@ -1,3 +1,6 @@
+<script lang="ts">
+	import back_button from "$lib/imgs/back.png";
+</script>
 <svelte:head>
 	<title>כמה שירים (Some Poems) | Henry Wandover</title>
 	<meta name="title" content="Henry Wandover's Writing" />
@@ -10,7 +13,7 @@
 </svelte:head>
 
 <div class="content">
-    <a href="/"><img src="/back.png" /></a>
+    <a href="/"><img src={back_button} /></a>
 		<h2>Chinese Restaurant</h2>
 		<br>
 

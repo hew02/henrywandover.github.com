@@ -1,4 +1,4 @@
-import {calculateGrid, asciiScale, rows, cols, addChar, addString} from './p5ASCII.js';
+import {calculateGrid, asciiScale, rows, cols, addChar, addString} from '../nSlash/nSlash.js';
  
 import * as hw from './hew.js';
 

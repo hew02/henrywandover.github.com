@@ -3,7 +3,7 @@
 	src:
 		local('Sina Nova'),
 		local('Sina-Nova'),
-		url('/sina_nova.ttf') format('truetype');
+		url('/fonts/sina_nova.ttf') format('truetype');
 	font-style: normal;
 }
 
@@ -12,8 +12,13 @@
 	src:
 		local('Noto Serif Hebrew'),
 		local('Noto-Serif-Hebrew'),
-		url('/NotoSerifHebrew-VariableFont_wdth,wght.ttf') format('truetype');
+		url('/fonts/NotoSerifHebrew-VariableFont_wdth,wght.ttf') format('truetype');
 	font-style: normal;
+}
+
+@font-face {
+  font-family: 'VGA8';
+  src: url('/fonts/vga8.woff') format('woff');
 }
 
 :root {

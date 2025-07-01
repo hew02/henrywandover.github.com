@@ -1,3 +1,6 @@
+<script lang="ts">
+	import back_button from "$lib/imgs/back.png";
+</script>
 <svelte:head>
 	<title>כמה שירים (Some Poems) | Henry Wandover</title>
 	<meta name="title" content="Henry Wandover's Writing" />
@@ -10,7 +13,7 @@
 </svelte:head>
 
 <div class="content">
-    <a href="/"><img src="/back.png" /></a>
+    <a href="/"><img src={back_button} /></a>
 		<h2>כמה שירים (Some Poems)</h2>
 		<h4>
 		The original Hebrew and its translation. I'm still in the process of learning Hebrew; these were an exercise in writing and translation.
