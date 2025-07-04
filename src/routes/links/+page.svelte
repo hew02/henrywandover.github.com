@@ -1,5 +1,5 @@
 <script lang="ts">
-	import back_button from "$lib/imgs/back.png";
+	import Back from '$lib/modules/back_button.svelte';
 </script>
 <svelte:head>
     <title>Cool Sites | Henry Wandover</title>
@@ -13,7 +13,7 @@
 </svelte:head>
 
 <div class="content">
-    <a href="/"><img src={back_button} /></a>
+    <Back />
     <h2>Links</h2>
 
     <h3>General</h3>

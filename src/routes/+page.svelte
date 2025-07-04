@@ -5,11 +5,11 @@
 
 	import AboutSection from '$lib/modules/about.svelte';
 	import ProjectsSection from '$lib/modules/projects.svelte';
-  import WritingSection from '$lib/modules/writing.svelte';
+  	import WritingSection from '$lib/modules/writing.svelte';
 </script>
 
 <svelte:head>
-	<title>Henry Wandover</title>
+	<title>Henry Wandover's Web Page</title>
 	<meta name="title" content="Henry Wandover" />
 	<meta name="description" content="A personal site made by Henry Wandover, for Henry Wandover" />
 	<meta name="keywords" content="Computer Science, Writing, Blog" />
@@ -18,24 +18,20 @@
 <!--<a id="ai-badge" href="https://notbyai.fyi/" target="_blank" rel="noreferrer noopener"></a>-->
 
 <div class="content">
-	<h1 style="padding-bottom:0.4em;">The Home Page of Henry Wandover</h1>
+	<h1>The Home Page of Henry Wandover</h1>
 	<div style="overflow-x:auto;">
-		<table>
+		<table width="100%">
 			<tbody>
 				<tr>
-					<td width="50%" valign="top" style="padding-right: 1em;">
+					<td width="50%" valign="top">
 						<AboutSection />
 					</td>
-					<td width="50%" valign="top" style="float:right">
+					<td width="10%" valign="top">
+					</td>
+					<td width="40%" valign="top">
 						<ProjectsSection />
-					</td>
-				</tr>
-				<tr>
-					<td width="50%" valign="top" style="padding-right: 1em;">
 						<WritingSection />
-					</td>
-					<td width="50%" valign="top" style="float:right">
-						<h2>Blog Posts</h2>
+						<!--<h2>Blog Posts</h2>
 						<ol>
 							{#each data.posts as post}
 								<li class="post-item">
@@ -50,10 +46,10 @@
 										{post.title}
 									</a>
 									<br />
-									<small>{sqlDate2Pretty(post.date)}</small>
+									<small>{post.date}</small>
 								</li>
 							{/each}
-						</ol>
+						</ol>-->
 					</td>
 				</tr>
 			</tbody>

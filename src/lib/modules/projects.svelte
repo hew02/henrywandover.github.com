@@ -16,7 +16,7 @@
 			href="https://github.com/yung-turabian/hasqtan/"
 			target="_blank"
 			rel="noreferrer noopener"
-			title="Git repository">hasqtan</a
+			title="Git repository">Hasqtan</a
 		>
 		<br />
 		<small>Toy functional language</small>
@@ -47,5 +47,23 @@
 				title="Links homepage">Links</a
 			></small
 		>
+	</li>
+	<li>
+		<a
+			href="/links-lang"
+			title="Deamon">Subkind Classes for Links</a
+		>
+		<br />
+		<small>My senior project at Bard College</small>
+	</li>
+	<li>
+		<a
+			href="https://github.com/yung-turabian/porter"
+			target="_blank"
+			rel="noreferrer noopener"
+			title="Daemon">porter</a
+		>
+		<br />
+		<small>A daemon for an organized filesystem</small>
 	</li>
 </ul>

@@ -1,0 +1,3 @@
+[submodule "nSlash.js"]
+	path = static/js/nSlash
+	url = https://github.com/PunchSoftware/nSlash.js

@@ -2,7 +2,7 @@
 	import how_to_create_surveillance_state from '$lib/docs/How_to_Create_a_Surveillance_State__And_How_Librarians_Attempted_to_Dismantle_It.pdf';
 	import journey_to_the_ivory_tower from '$lib/docs/Journey_to_the_Ivory_Tower__Making_Links__Polymorphism_Ad_Hoc.pdf';
 </script>
-<h2>My Writing (Essays/Poetry/Articles)</h2>
+<h2>My Writing</h2>
 
 <ol class="none">
 	<li>
