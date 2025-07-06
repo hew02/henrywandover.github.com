@@ -4,4 +4,4 @@ Nothing much, just the repo for my personal website/portfolio.
 
 ## The Tools
 
-Built with SvelteKit and hosted with Vercel.
+Built with React Router and hosted with Vercel.

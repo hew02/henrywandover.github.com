@@ -1,3 +1,3 @@
-[submodule "nSlash.js"]
+[submodule "static/js/nSlash"]
 	path = static/js/nSlash
-	url = https://github.com/PunchSoftware/nSlash.js
+	url = https://www.github.com/PunchSoftware/nSlash.js
