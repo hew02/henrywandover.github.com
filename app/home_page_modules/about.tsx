@@ -40,7 +40,7 @@ export function About() {
                 . There are more programming-related things on{" "}
                 <a
                     aria-label="External GitHub link"
-                    href="https://github.com/yung-turabian"
+                    href="https://github.com/hew02"
                     target="_blank"
                     rel="noreferrer noopener"
                     title="GitHub"
