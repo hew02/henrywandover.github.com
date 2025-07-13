@@ -114,6 +114,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     name="msapplication-TileImage"
                     content="/favicon/ms-icon-144x144.png"
                 />
+                <title>Henry Wandover</title>
+                <meta name="author" content="Henry Wandover" />
+                <meta name="description" content="A personal site made by Henry Wandover, for Henry Wandover" />
+                <meta name="keywords" content="Computer Science, Writing, Blog" />
+                
                 <meta name="theme-color" content="#ffffff" />
                 <link rel="stylesheet" href="/themes/prism.css" data-noprefix />
                 <link
