@@ -1,4 +1,4 @@
-import Resume from "/documents/Resume.pdf";
+import Resume from "/documents/WebResume.pdf";
 
 export function About() {
     return (
@@ -8,7 +8,7 @@ export function About() {
                 Hey there, welcome to my site! I'm Henry, a recent graduate of
                 Bard College with a degree in Computer Science and Politics.
                 Currently residing in Philadelphia, I work on software projects
-                related to programming languages and desktop developer tools.
+                related to programming languages and desktop, developer tools.
                 Along with what I do in my free time, I am also looking for
                 work, ideally, either in backend software or game development.
                 If you have an opportunity, or know of one, feel free to check
@@ -69,18 +69,39 @@ export function About() {
                 </a>
                 .
             </p>
+
+            <h2>Quick Links</h2>
+
             <ul>
                 <li>
-                    <a href="/links" title="Sites I Enjoy">
-                        External sites of interest
+                    My favorite{" "}
+                    <a href="/links" title="A page linking to external sites">
+                        sites
                     </a>
                 </li>
                 <li>
-                    <p>
-                        <a href="/pgp.txt" title="text file">
-                            My PGP pubkey
-                        </a>
-                    </p>
+                    <a
+                        aria-label="Text file"
+                        href="/pgp.txt"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        title="PGP/GPG public key"
+                    >
+                        My PGP pubkey
+                    </a>
+                </li>
+                <li>
+                    I was out on a walk and got{" "}
+                    <a
+                        aria-label="News article"
+                        href="https://www.audacy.com/kywnewsradio/news/local/philly-union-members-join-nationwide-protest-against-ice"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        title="New article where I was quoted"
+                    >
+                        interviewed
+                    </a>{" "}
+                    (check the end of the article)
                 </li>
             </ul>
         </div>

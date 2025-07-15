@@ -139,17 +139,25 @@ ul.none, ol.none {
 	min-height: 90%;
 	background-color: var(--);
 	padding-bottom: 2em;
-	.content {
-		padding: 1em;
-		width: 90%;
-		line-height: 1.4;
-	}
-	.content p {
+}
+
+.content {
+	padding: 1em;
+	width: 90%;
+	line-height: 1.4;
+	p {
 		margin: 0 0 18px 0;
 	}
-	.content h2 {
+	h2 {
 		margin: 0 0 10px 0;
 	}
+}
+
+.centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 img {
