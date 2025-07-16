@@ -21,7 +21,7 @@ export function Projects() {
                 </li>
                 <li>
                     <a
-                        href="https://github.com/yung-turabian/hasqtan/"
+                        href="/hasqtan"
                         target="_blank"
                         rel="noreferrer noopener"
                         title="Git repository"
