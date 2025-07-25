@@ -12,7 +12,7 @@ export function Projects() {
                     <small>
                         A general-purpose C/C++ library;{" "}
                         <a
-                            href="https://yung-turabian.github.io/reislib/"
+                            href="https://libreis.henrywandover.com/"
                             title="View Doxygen pages for my lib"
                         >
                             docs here
@@ -84,6 +84,16 @@ export function Projects() {
                     <br />
                     <small>A daemon for an organized filesystem</small>
                 </li>
+								<li>
+										<a
+												href="https://github.com/PunchSoftware/cscript"
+												target="_blank"
+												rel="noreferrer noopener"
+												title="Embedded C language"
+										>
+										<br />
+										<small>Embedded, dynamic C-like language</small>
+								</li>
             </ul>
         </div>
     );
