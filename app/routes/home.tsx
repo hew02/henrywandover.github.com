@@ -17,20 +17,15 @@ export default function Home() {
   return (
     <div className="content">
       <h1>The Home Page of Henry Wandover</h1>
-      <div style={{ overflowX: "auto"}}>
-        <table width="100%">
-          <tbody>
-            <tr>
-            <td width="50%" valign="top">
-              <About />
-            </td>
-            <td width="10%" valign="top">
-            </td>
-            <td width="40%" valign="top">
-              <Projects />
-              <br />
-              <Writing />
-              {/*<h2>Blog Posts</h2>
+      <div className="responsive-container">
+        <div className="left-column">
+          <About />
+        </div>
+        <div className="right-column">
+          <Projects />
+          <br />
+          <Writing />
+          {/*<h2>Blog Posts</h2>
               <ol>
                 {#each data.posts as post}
                   <li class="post-item">
@@ -49,10 +44,7 @@ export default function Home() {
                   </li>
                 {/each}
               </ol>*/}
-            </td>
-            </tr>
-          </tbody>
-        </table>
+        </div>
       </div>
     </div>
   );

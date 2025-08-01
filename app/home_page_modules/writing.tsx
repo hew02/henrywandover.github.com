@@ -6,7 +6,7 @@ import journey_to_the_ivory_tower from
 export function Writing() {
     return (
         <div id="writing">
-            <h2>My Writing</h2>
+            <h2>Writing</h2>
 
             <ol className="none">
                 <li>

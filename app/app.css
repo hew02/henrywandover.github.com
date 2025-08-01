@@ -95,36 +95,12 @@ footer {
 
 #main-container {
 	display: flex;
+	place-items: center;
 	justify-content: center;
+	flex-direction: column;
 	min-height: 100%;
 	width: 100%;
 	position: absolute;
-	z-index: 999;
-	top: 0;
-	@media (max-width: 768px) {
-		#card #ai-badge {
-			width: 100px;
-			height: 32px;
-			top: 2%;
-			right: 2%;
-		}
-	}
-	#card #ai-badge {
-		position: absolute;
-		right: 5%;
-		top: 4%;
-		width: 131px;
-		height: 42px;
-		background-image: url("./Written-By-Human-Not-By-AI-Badge-white.svg");
-		background-size: cover;
-		transition: background-image 1s ease-in-out;
-		transform: translateX(0);
-	}
-	#card #ai-badge:hover {
-		background-image: url(
-			"./Written-By-Human-Not-By-AI-Badge-black.svg"
-		);
-	}
 }
 
 ul.none, ol.none {
@@ -133,12 +109,11 @@ ul.none, ol.none {
 
 #card {
 	background: var(--background-light);
+	border: 15px outset var(--mid-gray);
 	display: flex;
 	flex-direction: column;
-	width: 80%;
-	min-height: 90%;
-	background-color: var(--);
-	padding-bottom: 2em;
+	width: 50%;
+	margin-bottom: 4em;
 }
 
 .content {
@@ -203,4 +178,22 @@ img {
 	50% { transform: rotate(0) scale(1); }
     75% { transform: rotate(-4deg) scale(1.05); }
 	100% { transform: rotate(0) scale(1); } 
+}
+
+.responsive-container {
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .responsive-container {
+    flex-direction: row;
+	justify-content: space-between;
+  }
+
+  .left-column,
+  .right-column {
+    width: 50%;
+  }
 }

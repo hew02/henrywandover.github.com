@@ -24,7 +24,7 @@ export const links: Route.LinksFunction = () => [
     {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap",
-    }
+    },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -105,10 +105,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     sizes="16x16"
                     href="/favicon/favicon-16x16.png"
                 />
-                <link
-                    rel="manifest"
-                    href="/favicon/manifest.json"
-                />
+                <link rel="manifest" href="/favicon/manifest.json" />
                 <meta name="msapplication-TileColor" content="#ffffff" />
                 <meta
                     name="msapplication-TileImage"
@@ -116,9 +113,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 />
                 <title>Henry Wandover</title>
                 <meta name="author" content="Henry Wandover" />
-                <meta name="description" content="A personal site made by Henry Wandover, for Henry Wandover" />
-                <meta name="keywords" content="Computer Science, Writing, Blog" />
-                
+                <meta
+                    name="description"
+                    content="A personal site made by Henry Wandover, for Henry Wandover"
+                />
+                <meta
+                    name="keywords"
+                    content="Computer Science, Writing, Blog"
+                />
+
                 <meta name="theme-color" content="#ffffff" />
                 <link rel="stylesheet" href="/themes/prism.css" data-noprefix />
                 <link
@@ -135,7 +138,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
                 <script>let FF_FOUC_FIX;</script>
 
-                  {/*<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>-->
+                {/*<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>-->
                   <!--<script src="/js/nSlash/dist/nSlash.js" ></script>-->
                   <!--DISABLING FOR NOW, DO LATER.<script src="/js/sketch.js" type="module"></script>*/}
 
@@ -157,6 +160,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         </html>
     );
 }
+
+export function HydrateFallback() {}
 
 export default function App() {
     return <Outlet />;

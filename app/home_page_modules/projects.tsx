@@ -44,28 +44,6 @@ export function Projects() {
                     <small>Game jam game about bargaining</small>
                 </li>
                 <li>
-                    <a
-                        href="https://github.com/yung-turabian/zephyr"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        title="Links Tools"
-                    >
-                        zephyr
-                    </a>
-                    <br />
-                    <small>
-                        Live reloading for{" "}
-                        <a
-                            href="https://www.links-lang.org"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            title="Links homepage"
-                        >
-                            Links
-                        </a>
-                    </small>
-                </li>
-                <li>
                     <a href="/my-work-on-links" title="Links">
                         Subkind Classes for Links
                     </a>
@@ -82,18 +60,20 @@ export function Projects() {
                         porter
                     </a>
                     <br />
-                    <small>A daemon for an organized filesystem</small>
+                    <small>A GNU daemon for an organized filesystem</small>
                 </li>
-								<li>
-										<a
-												href="https://github.com/PunchSoftware/cscript"
-												target="_blank"
-												rel="noreferrer noopener"
-												title="Embedded C language"
-										>
-										<br />
-										<small>Embedded, dynamic C-like language</small>
-								</li>
+                <li>
+                    <a
+                        href="https://github.com/PunchSoftware/cscript"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        title="Embedded C language"
+                    >
+                        cscript
+                    </a>
+                    <br />
+                    <small>Embedded, dynamic C-like language</small>
+                </li>
             </ul>
         </div>
     );
