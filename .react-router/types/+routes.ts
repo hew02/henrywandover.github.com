@@ -34,12 +34,15 @@ type Pages = {
   "/writing/some-poems": {
     params: {};
   };
+  "/projects": {
+    params: {};
+  };
 };
 
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/" | "/links" | "/hasqtan" | "/my-work-on-links" | "/writing" | "/writing/chinese-restaurant" | "/writing/the-final-fumes-of-the-rutgers-teachers-strike" | "/writing/some-poems";
+    page: "/" | "/links" | "/hasqtan" | "/my-work-on-links" | "/writing" | "/writing/chinese-restaurant" | "/writing/the-final-fumes-of-the-rutgers-teachers-strike" | "/writing/some-poems" | "/projects";
   };
   "routes/home.tsx": {
     id: "routes/home";
@@ -72,5 +75,9 @@ type RouteFiles = {
   "./routes/writing/some-poems.tsx": {
     id: "routes/writing/some-poems";
     page: "/writing/some-poems";
+  };
+  "./routes/projects/home.tsx": {
+    id: "routes/projects/home";
+    page: "/projects";
   };
 };

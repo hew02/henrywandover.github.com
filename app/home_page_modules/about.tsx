@@ -6,7 +6,7 @@ export function About() {
             <h2>Who Am I?</h2>
             <p>
                 Hey there, welcome to my site. I'm Henry, a recent graduate of
-                Bard College with a degree in Computer Science and Politics. I
+                Bard College with a degree in computer science and politics. I
                 currently reside in Philadelphia. My interests, in terms of
                 programming, are the development of programming languages and
                 desktop, developer tools. Along with software, I also enjoy
@@ -24,7 +24,7 @@ export function About() {
                 .
             </p>
             <p>
-                You can reach me at <b>henrywandover[at]gmail[dot]com</b>. In
+                You can reach me at <b>henrywandover [at] gmail [dot] com</b>. In
                 addtion to this site, more programming-related things can be
                 found on my{" "}
                 <a

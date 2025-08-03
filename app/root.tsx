@@ -25,6 +25,14 @@ export const links: Route.LinksFunction = () => [
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap",
     },
+		{
+				rel: "stylesheet",
+				href: "https://db.onlinewebfonts.com/c/faf8d8ddb2bbec6d255985bf1e77a815?family=Sina+Nova+W01+Regular"
+		},
+		{
+				rel: "stylesheet",
+				href: "https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap"
+		},
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -147,9 +155,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </head>
             <body>
                 <div id="main-container">
-                    <div id="card">{children}</div>
+                    <div id="card">
+												<nav>
+														<a href="/writing">WRITING</a>
+														<a href="/about">ABOUT</a>
+														<a href="/">HOME</a>
+														<a href="/projects">PROJECTS</a>
+												</nav>
+												{children}
+										</div>
                     <footer>
-                        <ul>
+                        <ul className="none">
                             <li>© 2025 Henry Wandover.</li>
                         </ul>
                     </footer>

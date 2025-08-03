@@ -1,29 +1,10 @@
 @font-face {
-	font-family: 'SinaNova';
-	src:
-		local('Sina Nova'),
-		local('Sina-Nova'),
-		url('/fonts/sina_nova.ttf') format('truetype');
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'NotoSerifHebrew';
-	src:
-		local('Noto Serif Hebrew'),
-		local('Noto-Serif-Hebrew'),
-		url('/fonts/NotoSerifHebrew-VariableFont_wdth,wght.ttf') format('truetype');
-	font-style: normal;
-}
-
-@font-face {
   font-family: 'VGA8';
   src: url('/fonts/vga8.woff') format('woff');
 }
 
 :root {
 	--peter: #64a70b;
-	--lighter-peter: #81d70e;
 	--off-white: #fcfcfc;
 	--deep-gray: #060606;
 	--mid-gray: #242424;
@@ -33,22 +14,15 @@
 }
 
 * {
-	color: var(--text-normal);
 	margin: 0;
 	padding: 0;
-	font-family: 'SinaNova', 'NotoSerifHebrew', serif;
+	font-family: 'Sina Nova W01 Regular', 'Noto Sans Hebrew', serif;
 }
 
-h1 {
-	padding-bottom:0.4em;
-}
-
-body {
-	background: var(--background-dark);
-}
-
+body { background: var(--background-dark); }
 a { color: var(--peter); }
-a:hover { color: var(--lighter-peter); text-decoration: line-through; }
+a:hover { filter: brightness(140%); text-decoration: line-through; }
+p { font-size: 1.05em; }
 ul { padding-left: 1em; }
 small { font-size: 0.8em; }
 
@@ -65,32 +39,35 @@ div.post-date i {
 	float: right;
 }
 
+.home-description {
+		display: flex;
+		gap: 2em;
+}
+
 nav {
-	margin: 1em 0.5em 0.5em 0.5em;
-	padding: 1em 0 1em 1.8em;
-	word-spacing: 1em;
-	background-color: #242424;
-	a.active {
-		text-decoration-line: underline;
-		font-weight: bold;
-	}
+		display: flex;
+		flex-direction: row;
+		gap: 1.5em;
+		padding: 1em;
+		a {
+				text-decoration-line: none;
+		}
 }
 
 footer {
-	position: absolute;
-	margin-bottom: 14px;
-	bottom: 0;
-	ul {
-		list-style-type: none;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	li {
-		white-space: nowrap;
-		font-size: 14px;
-	}
+		color: var(--text-normal);
+		position: absolute;
+		margin-bottom: 14px;
+		bottom: 0;
+		ul {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+		}
+		li {
+				white-space: nowrap;
+				font-size: 14px;
+		}
 }
 
 #main-container {
@@ -103,24 +80,22 @@ footer {
 	position: absolute;
 }
 
-ul.none, ol.none {
-	list-style-type: none;
-}
+ul.none, ol.none { list-style-type: none; }
 
 #card {
-	background: var(--background-light);
-	border: 15px outset var(--mid-gray);
+	background: white;
+	border: 10px outset #dfdfdf;
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	max-width: 65em;
 	margin-bottom: 4em;
 }
 
 .content {
 	padding: 1em;
-	width: 90%;
-	line-height: 1.4;
+  overflow-wrap: break-word;
 	p {
+
 		margin: 0 0 18px 0;
 	}
 	h2 {
