@@ -158,7 +158,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     <div id="card">
 												<nav>
 														<a href="/writing">WRITING</a>
-														<a href="/about">ABOUT</a>
+														{/*<a href="/about">ABOUT</a>*/}
 														<a href="/">HOME</a>
 														<a href="/projects">PROJECTS</a>
 												</nav>

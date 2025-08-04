@@ -10,10 +10,10 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Projects() {
+export default function Writing() {
   return (
     <div className="content">
-            <h2>Personal/FOSS Projects</h2>
+            <h2>Projects</h2>
 
             <ul>
                 <li>
@@ -88,24 +88,10 @@ export default function Projects() {
                 </li>
             </ul>
 
-						<br />
-
-						<h2>Freelancing things</h2>
+						<h2>Other</h2>
 						<ul>
 								<li>
-										<p>
-										Designed and implemented a web application portfolio for my friend, utilizing SvelteKit and Turso.
-										</p>
-										<p>
-												It can be viewed{" "}
-											<a
-                        href="https://franciskaragodins.com"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        title="My friend's site that I designed"
-                    >here
-										</a>.
-										</p>
+										Designed and implemented a web application—or dynamic site—portfolio for my friend. Utilized SvelteKit and Turso.
 								</li>
 						</ul>
     </div>

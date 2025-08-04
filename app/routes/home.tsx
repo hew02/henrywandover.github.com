@@ -45,6 +45,7 @@ export default function Home() {
 						</a>
 						.
 			</p>
+						<br />
 		<p>
                 You can reach me at <b>henrywandover [at] gmail [dot] com</b>. In
                 addtion to this site, more programming-related things can be
@@ -80,6 +81,8 @@ export default function Home() {
                 </a>
                 .
             </p>
+
+								<br />
 
             <h3>Quick Links</h3>
 
