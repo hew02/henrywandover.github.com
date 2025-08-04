@@ -1,5 +1,5 @@
 import journey_to_the_ivory_tower from "/sproj_files/Journey_to_the_Ivory_Tower__Making_Links__Polymorphism_Ad_Hoc.pdf";
-import poster from "/sproj_files/JttIT-Poster.jpg";
+import poster from "/sproj_files/JttIT-Poster.pdf";
 import Back from "../mods/back";
 import type { Route } from "./+types/my-work-on-links";
 

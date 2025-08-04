@@ -23,7 +23,7 @@ export default function Home() {
 
 			<div className="home-description">
 		  
-			<img src="/pfp.JPG" height="200px" />
+			<img src="/pfp.png" height="200px" />
 
 			<div>
 			<p>
