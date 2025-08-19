@@ -1,5 +1,4 @@
 import Img from "/back.png";
-import Wheel from "/back_wheel.png";
 
 export default function Back() {
     return (
