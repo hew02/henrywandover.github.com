@@ -108,7 +108,7 @@ export default function Home() {
           <h2>Fun facts</h2>
           <ul>
             <li>
-              Did some color correction/editing/audio mixing for my friend's{" "}
+              Did some color correction, editing and audio mixing for my friend's{" "}
               <a
                 aria-label="External YouTube link."
                 href="https://www.youtube.com/watch?v=PkWONztyGvw"
